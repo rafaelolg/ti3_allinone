@@ -20,4 +20,10 @@
 *.mtc
 *.mtc1
 *.out
+*.bcf
+*.ptc
+*.run.xml
 *.synctex.gz
+*.fdb_latexmk
+*.fls
+main.pdf
