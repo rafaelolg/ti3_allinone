@@ -20,6 +20,8 @@
 
 \usepackage{eso-pic} % Required for specifying an image background in the title page
 
+\usepackage{float}
+
 %----------------------------------------------------------------------------------------
 %	MAIN TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
@@ -179,50 +181,59 @@
 
 \RequirePackage[framemethod=default]{mdframed} % Required for creating the theorem, definition, exercise and corollary boxes
 
-% Theorem box
-\newmdenv[skipabove=7pt,
-skipbelow=7pt,
-backgroundcolor=black!5,
-linecolor=ocre,
-innerleftmargin=5pt,
-innerrightmargin=5pt,
-innertopmargin=5pt,
-leftmargin=0cm,
-rightmargin=0cm,
-innerbottommargin=5pt]{tBox}
-
-% Exercise box	  
 \newmdenv[skipabove=7pt,
 skipbelow=7pt,
 rightline=false,
 leftline=true,
 topline=false,
 bottomline=false,
-backgroundcolor=ocre!10,
-linecolor=ocre,
+backgroundcolor=blue!8,
+linecolor=blue!80,
 innerleftmargin=5pt,
 innerrightmargin=5pt,
 innertopmargin=5pt,
 innerbottommargin=5pt,
 leftmargin=0cm,
 rightmargin=0cm,
-linewidth=4pt]{eBox}	
+linewidth=4pt]{SEbox}  
+\newenvironment{SEf}{\textcolor{blue}}
 
-% Definition box
+
+% Shards of the Throne Expansion box	  
 \newmdenv[skipabove=7pt,
 skipbelow=7pt,
 rightline=false,
 leftline=true,
 topline=false,
 bottomline=false,
-linecolor=ocre,
+backgroundcolor=red!6,
+linecolor=red!70,
+innerleftmargin=5pt,
+innerrightmargin=5pt,
+innertopmargin=5pt,
+innerbottommargin=5pt,
+leftmargin=0cm,
+rightmargin=0cm,
+linewidth=4pt]{STbox}	
+\newenvironment{STf}{\textcolor{red}}
+
+% Online Rules and Options from the FFG-Website box
+\newmdenv[skipabove=7pt,
+skipbelow=7pt,
+rightline=false,
+leftline=true,
+topline=false,
+bottomline=false,
+linecolor=green,
+backgroundcolor=green!15,
 innerleftmargin=5pt,
 innerrightmargin=5pt,
 innertopmargin=0pt,
 leftmargin=0cm,
 rightmargin=0cm,
 linewidth=4pt,
-innerbottommargin=0pt]{dBox}	
+innerbottommargin=0pt]{FFGbox}	
+\newenvironment{FFGf}{\color[rgb]{0.1,0.5,0.1}}
 
 % Corollary box
 \newmdenv[skipabove=7pt,
@@ -231,7 +242,7 @@ rightline=false,
 leftline=true,
 topline=false,
 bottomline=false,
-linecolor=gray,
+linecolor=black!50,
 backgroundcolor=black!5,
 innerleftmargin=5pt,
 innerrightmargin=5pt,
@@ -239,17 +250,14 @@ innertopmargin=5pt,
 leftmargin=0cm,
 rightmargin=0cm,
 linewidth=4pt,
-innerbottommargin=5pt]{cBox}
+innerbottommargin=5pt]{HRbox}
+\newenvironment{HRf}{\textcolor{black!50}}
 
 % Creates an environment for each type of theorem and assigns it a theorem text style from the "Theorem Styles" section above and a colored box from above
-\newenvironment{theorem}{\begin{tBox}\begin{theoremeT}}{\end{theoremeT}\end{tBox}}
-\newenvironment{exercise}{\begin{eBox}\begin{exerciseT}}{\hfill{\color{ocre}\tiny\ensuremath{\blacksquare}}\end{exerciseT}\end{eBox}}				  
-\newenvironment{definition}{\begin{dBox}\begin{definitionT}}{\end{definitionT}\end{dBox}}	
-\newenvironment{example}{\begin{exampleT}}{\hfill{\tiny\ensuremath{\blacksquare}}\end{exampleT}}		
-\newenvironment{corollary}{\begin{cBox}\begin{corollaryT}}{\end{corollaryT}\end{cBox}}	
+
 
 %----------------------------------------------------------------------------------------
-%	REMARK ENVIRONMENT
+%	SUBSECTIONS ENVIRONMENTS
 %----------------------------------------------------------------------------------------
 
 \newenvironment{remark}{\par\vspace{10pt}\small % Vertical white space above the remark and smaller font size
@@ -257,9 +265,49 @@ innerbottommargin=5pt]{cBox}
 \leftmargin=35pt % Indentation on the left
 \rightmargin=25pt}\item\ignorespaces % Indentation on the right
 \makebox[-2.5pt]{\begin{tikzpicture}[overlay]
-\node[draw=ocre!60,line width=1pt,circle,fill=ocre!25,font=\sffamily\bfseries,inner sep=2pt,outer sep=0pt] at (-15pt,0pt){\textcolor{ocre}{R}};\end{tikzpicture}} % Orange R in a circle
+\node[draw=ocre!60,line width=1pt,circle,fill=ocre!25,font=\sffamily\bfseries,inner sep=1pt,outer sep=0pt] at (-18pt,0pt){\textcolor{ocre}{remark}};\end{tikzpicture}} % Orange symbol in a circle
 \advance\baselineskip -1pt}{\end{list}\vskip5pt} % Tighter line spacing and white space after remark
 
+
+% \newenvironment{SE}{\par\vspace{10pt}\small % Vertical white space above the remark and smaller font size
+% \begin{list}{}{
+% \leftmargin=35pt % Indentation on the left
+% \rightmargin=25pt}\item\ignorespaces % Indentation on the right
+% \makebox[-2.5pt]{\begin{tikzpicture}[overlay]
+% \node[draw=ocre!60,line width=1pt,circle,fill=ocre!25,font=\sffamily\bfseries,inner sep=1pt,outer sep=0pt] at (-18pt,0pt){\textcolor{ocre}{SE}};\end{tikzpicture}} % Orange symbol in a circle
+% \advance\baselineskip -1pt}{\end{list}\vskip5pt} % Tighter line spacing and white space after remark
+
+
+% \newenvironment{SoT}{\par\vspace{10pt}\small % Vertical white space above the remark and smaller font size
+% \begin{list}{}{
+% \leftmargin=35pt % Indentation on the left
+% \rightmargin=25pt}\item\ignorespaces % Indentation on the right
+% \makebox[-2.5pt]{\begin{tikzpicture}[overlay]
+% \node[draw=ocre!60,line width=1pt,circle,fill=ocre!25,font=\sffamily\bfseries,inner sep=1pt,outer sep=0pt] at (-18pt,0pt){\textcolor{ocre}{SoT}};\end{tikzpicture}} % Orange symbol in a circle
+% \advance\baselineskip -1pt}{\end{list}\vskip5pt} % Tighter line spacing and white space after remark
+
+
+% \newenvironment{FFG}{\par\vspace{10pt}\small % Vertical white space above the remark and smaller font size
+% \begin{list}{}{
+% \leftmargin=35pt % Indentation on the left
+% \rightmargin=25pt}\item\ignorespaces % Indentation on the right
+% \makebox[-2.5pt]{\begin{tikzpicture}[overlay]
+% \node[draw=ocre!60,line width=1pt,circle,fill=ocre!25,font=\sffamily\bfseries,inner sep=1pt,outer sep=0pt] at (-18pt,0pt){\textcolor{ocre}{FFG}};\end{tikzpicture}} % Orange symbol in a circle
+% \advance\baselineskip -1pt}{\end{list}\vskip5pt} % Tighter line spacing and white space after remark
+
+
+% \newenvironment{HR}{\par\vspace{10pt}\small % Vertical white space above the remark and smaller font size
+% \begin{list}{}{
+% \leftmargin=35pt % Indentation on the left
+% \rightmargin=25pt}\item\ignorespaces % Indentation on the right
+% \makebox[-2.5pt]{\begin{tikzpicture}[overlay]
+% \node[draw=ocre!60,line width=1pt,circle,fill=ocre!25,font=\sffamily\bfseries,inner sep=1pt,outer sep=0pt] at (-18pt,0pt){\textcolor{ocre}{HR}};\end{tikzpicture}} % Orange symbol in a circle
+% \advance\baselineskip -1pt}{\end{list}\vskip5pt} % Tighter line spacing and white space after remark
+
+
+%   SUBSECTIONS ENVIRONMENTS
+
+\usepackage{framed}
 %----------------------------------------------------------------------------------------
 %	SECTION NUMBERING IN THE MARGIN
 %----------------------------------------------------------------------------------------
@@ -282,6 +330,7 @@ innerbottommargin=5pt]{cBox}
 {-2ex \@plus-.2ex \@minus .2ex}
 {.1ex}
 {\normalfont\small\sffamily\bfseries}}
+
 
 %----------------------------------------------------------------------------------------
 %	HYPERLINKS IN THE DOCUMENTS
@@ -342,3 +391,4 @@ innerbottommargin=5pt]{cBox}
 \fi
 }
 \makeatother
+
