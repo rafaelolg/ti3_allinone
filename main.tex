@@ -19,7 +19,7 @@
 \usepackage[top=3cm,bottom=3cm,left=3.2cm,right=3.2cm,headsep=10pt,letterpaper]{geometry} % Page margins
 
 \usepackage{xcolor} % Required for specifying colors by name
-\definecolor{ocre}{RGB}{52,177,201} % Define the orange color used for highlighting throughout the book
+\definecolor{ocre}{RGB}{80,130,201} % Define the orange color used for highlighting throughout the book
 
 % Font Settings
 \usepackage{avant} % Use the Avantgarde font for headings
@@ -45,16 +45,15 @@
 
 \begingroup
 \thispagestyle{empty}
-\AddToShipoutPicture*{\put(0,0){\includegraphics[scale=1.25]{esahubble}}} % Image background
+\AddToShipoutPicture*{\put(0,0){\includegraphics[height=\paperheight, width=\paperwidth]{pic945263}}} % Image background
 \centering
-\vspace*{5cm}
-\par\normalfont\fontsize{35}{35}\sffamily\selectfont
+\vspace*{10cm}
+\par\normalfont\fontsize{1}{1}\sffamily\selectfont
 \textbf{Twilight Imperium 3rd Ed.}\\
-{\LARGE All in One Manual}\par % Book title
+{\LARGE\textcolor{yellow}{All in One Manual}}\par % Book title
 \vspace*{1cm}
-{\Huge A Game by Christian T.Petersen}\par % Author name
+{\Huge\textcolor{yellow}{ A Game by Christian T.Petersen}}\par % Author name
 \endgroup
-
 %----------------------------------------------------------------------------------------
 %	COPYRIGHT PAGE
 %----------------------------------------------------------------------------------------
@@ -124,8 +123,11 @@ Version & Date        & Comment                                                 
 %	CHAPTER 1
 %----------------------------------------------------------------------------------------
 
-\chapterimage{head2.png} % Chapter heading image
+\chapterimage{ti05_preview.jpg} % Chapter heading image
 \chapter{Introduction}
+
+\section{The Object of the Game}\index{Objective}
+To win a game of TWILIGHT IMPERIUM ("TI"), players seek to accumulate a total of 10 victory points by achieving objectives and carefully choosing helpful strategies. The game ends when one player gains his 10th victory point or immediately after any other game-ending condition applies (see later).
 
 \section{Notations}\index{Notations}
 
@@ -154,10 +156,16 @@ House-Rules and Options (from boardgamegeek.com and ti3wiki.org etc.) with this 
 \end{HRbox}
 
 
-\section{Objective of the Game}\index{Objective}
-To win a game of TWILIGHT IMPERIUM ("TI"), players seek to accumulate a total of 10 victory points by achieving objectives and carefully choosing helpful strategies. The game ends when one player gains his 10th victory point or immediately after any other game-ending condition applies (see later).
 
 \section{Game Contents and Preparations}\index{Game Contents and Preparations}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=\textwidth]{components.jpg}\\
+    \caption{Twilight Imperium 3 straight out of shrinkwrap. image by MattDP@bgg https://boardgamegeek.com/image/222231}
+    \label{fig:game_compoments}
+\end{figure}
+
 
 \begin{itemize}
 \item 6 \SEf{8 in SE} frames of highly detailed plastic components in 6\SEf{8} colours. Each frame contains the following:
@@ -214,7 +222,7 @@ To win a game of TWILIGHT IMPERIUM ("TI"), players seek to accumulate a total of
 \end{itemize}
 
 \begin{STbox}
-\textbf{Components of the Scenario “Fall of the Empire”}
+\subsubsection{Components of the Scenario “Fall of the Empire”}
 \begin{itemize}
 \item 1 Race Sheet (the Lazax)
 \item 16 Lazax Command Counters
@@ -229,13 +237,15 @@ To win a game of TWILIGHT IMPERIUM ("TI"), players seek to accumulate a total of
 \end{itemize}
 \end{STbox}
 
-\subsection{Shattered Empire Components}\index{Shattered Components}
 \begin{SEbox}
-\textbf{The Shattered Empire Icon}\\
-\includegraphics[]{se_icon.png}
+\subsection{Shattered Empire Components}\index{Shattered Components}
+\subsubsection{The Shattered Empire Icon}
+
+\includegraphics[]{se_icon.png}\\
+
 All the cards in this expansion are marked with the \emph{Shattered Empire} symbol on their fronts, to allow you to easily separate them from your base \emph{Twilight Imperium} game.
 
-\textbf{Replacement Cards for Base Game}
+\subsubsection{Replacement Cards for Base Game}
 
 Several replacement cards for the Twilight Imperium 3rd Edition base game are included in this expansion. Some of these cards have been revised to correct errata, while others have been revised to work better with this expansion. To use the replacement cards, simply remove the original cards from their appropriate decks and replace them with the new versions. The replacement cards are:
 \begin{itemize}
@@ -257,12 +267,15 @@ Several replacement cards for the Twilight Imperium 3rd Edition base game are in
 \end{itemize}
 \end{SEbox}
 
-
 \begin{STbox}
-\textbf{The Shard of the Throne Icon }\\
-\includegraphics[]{st_icon.png}
-All the cards included in this expansion are marked with the \emph{Shards of the Throne} symbol on their fronts (pictured above), to allow you to easily separate them from your base \emph{Twilight Imperium} game.
+\subsection{The Shard of the Throne Components}\index{Shattered Components}
 
+\subsubsection{The Shard of the Throne Icon }
+
+\includegraphics[]{st_icon.png}
+
+All the cards included in this expansion are marked with the \emph{Shards of the Throne} symbol on their fronts (pictured above), to allow you to easily separate them from your base \emph{Twilight Imperium} game.
+\subsubsection{Replacement Cards for Base Game}
 \begin{itemize}
 \item ACTION CARDS
 \begin{itemize}
@@ -278,14 +291,292 @@ All the cards included in this expansion are marked with the \emph{Shards of the
 
 \end{STbox}
 
+\section{Component Overview}
+We will here summarize the various components of TI, so that you may recognize them while reading these rules.
 
-% This means that from multiple images with different wavelengths of the same target apply an algorithm to find the hidden patterns that lie hidden between them.
+\subsection{Map Hexes}
+Before every game of TI, players will create a unique game board by connecting the provided hexagon map pieces. Each individual piece is called a "system." The systems of TI each represent an area of space, its planets, and/or other elements of interest. Systems that contain an interior yellow outline are \textbf{Home Systems} from which the great races hail. Systems containing an interior red outline are \textbf{Special Systems} (such as Asteroid Fields) governed by special rules.
 
-% \section{A bit of context}\index{Context}
-% Now bbbbOk, here is where I explain from where this is going to start, at that time I just had a microcontrollers and engineering design course my mind was set completelly to find appplicable theories and create uselful things with them, which is the complete opposite of how astronomy works. First, there's no way to test an experiment with galaxies and most of the information is fuzzy and subjective (not all). The process of having an, let's say \emph{astronomy idea} is a result of applying all your physics knowledge and consider the \textbf{cosmological principle},
-% \begin{quote}
-% The (testable) assumption that the same physical laws that apply here and now also apply everywhere and at all times, and that there are no special locations or directions in the universe.
-% \end{quote}
+\begin{SEbox}There are 28 new system tiles in SE, including Ion Storms (a new type of Special System). Hope’s End, the imperial training ground, is also among the new systems. One of the new systems is the Wormhole Nexus (WN), which is easily distinguished by its non-hexagonal shape. Use of this system is optional, and when this rulebook refers to systems, the WN should be excluded unless stated otherwise.
+\end{SEbox}
+
+\begin{STbox}
+There are 14 new system tiles in SotT, including a Gravity Rift (a new type of Special System) and new Home Systems. A variant version of Mecatol Rex, used only in the Fall of the Empire scenario, is also among the new systems.
+\end{STbox}
+\subsection{Plastic Game Units}
+The detailed plastic pieces of TI (collectively called "units") represent the military personnel, shipyards, defensive systems, and spaceships that players will command. Units not employed on the game board are kept in a player’s reinforcement area.
+
+\subsection{Planet Cards}
+Representing the multitude of planets in TI, Planet Cards are used by players to indicate ownership over each individual planet and are "exhausted" (turned face down) when their owner "spends" the planets' resources or influence.
+
+\subsection{Technology Cards}
+At the beginning of the game, each player receives an identical Technology Deck (separated by colour) consisting of 24 \SEf{(28 with SE)} \STf{(32 with SotT)} technology advances. Throughout the game, when a player purchases (or otherwise acquires) a technology, the corresponding Technology Card is taken from his deck and placed face-up before him. 
+\subsection{ Action Cards}
+The Action Cards of TI provide players with a variety of helpful events, manoeuvres, bonuses, and other advantages. Players receive Action Cards throughout the game by a variety of activities.
+
+
+\subsection{Political Cards}
+Often the representatives of the great races must meet in the hallowed halls of the Galactic Council on
+Mecatol Rex to debate, deliberate, and enact policy for the custodial imperial charter. When a player executes the primary ability of the Political Strategy Card during the Action Phase (see later), he must draw and resolve the top card of the Political Deck. Each Political Card contains an \textbf{agenda} that all players must vote upon. The effects of an agenda can range from a minor formality, to a major change in the very structure of the game.
+
+\subsection{Objective Cards (Public and Secret)}
+In order to win TI, players need to accumulate 10 victory points. The primary way for players to receive such is by qualifying for the requirements of an Objective Card. The victory points provided by Public Objective Cards are attainable by all players, whereas those from Secret Objective Cards are individual to each player.
+\begin{SEbox}
+    
+The new sets of Stage I and Stage II Public Objectives can optionally be used instead of the original Objective deck. These cards tend to focus more on military conflict than the original set. Also provided are 3 new Secret Objectives, to be mixed in with the original set.
+Finally, Special Objectives have been included for use with two new optional rules: Artifacts (detailed on page 65) and the Voice of the Council option (detailed on page 68).
+\end{SEbox}
+\begin{STbox}
+Preliminary Objective Cards optionally start players with easier objectives worth 1 victory point each. Also provided are Scenario Objective Cards, only used in the Fall of the Empire scenario (including a special Lazax Objective Card).
+\end{STbox}
+\begin{STbox}
+    
+\subsubsection{The Secret Objective Deck}
+Some cards and rules in this expansion refer to the Secret Objective deck. This deck consists of any Secret Objective not in play. Instead of placing unused Secret Objective cards in the box, simply place them in the play area. When a player fulfils a Secret Objective card, it is removed from the game (and not shuffled back into this deck).
+\end{STbox}
+
+\subsection{Trade Cards}
+Each race has two Trade Contract cards which they can use to form trade agreements with other players. Each Trade Card has a numerical trade value which varies from race to race.
+
+\subsection{Strategy Cards}
+Each of the eight cardboard Strategy Cards represents a powerful short-term strategy. During the Strategy Phase of each game round, each player will select one Strategy Card and must later use its primary ability. Each Strategy Card also enables an important secondary ability that other players may execute after the primary ability is resolved.
+\begin{SEbox}
+    
+SE  features a new set of eight variant Strategy Cards, with a white background, that favours different strategies than the original set. In addition, there is a High Alert token for use with the new Warfare II Strategy Card. The variant Imperial Strategy Card, with a black background, may optionally be used with the original set of Strategy Cards.
+\end{SEbox}
+\begin{STbox}
+SotT  features variant Political, Assembly, and Trade Strategy Cards. Two Strategy Cards only used for the “Fall of the Empire” scenario are also included (Civilization and Industry, s. page 76).
+\end{STbox}
+
+\subsection{Bonus Counters}
+After all players have selected a Strategy Card during the Strategy Phase, there will (in a six-player game) be two Strategy Cards remaining in the common play area. Before the Strategy Phase ends, the two remaining Strategy Cards both receive a Bonus Counter that is placed on top of the Strategy Card itself. A player that later selects such a Strategy Card will be able to use the Bonus Counter to receive an additional Command Counter or Trade Good.
+
+
+\subsection{Command Counters}
+The Command Counter in TI is the abstract but integral resource representing the domestic mandate,
+budget, organization, logistics and preparedness of your race. When a player receives a Command Counter from his reinforcements, he must place it in either the Fleet Supply area, Strategy Allocation area, or Command Pool area on his Race Sheet. In order to execute tactical actions (such as moving, building, or initiating combat on the board), take advantage of the secondary abilities of Strategy Cards, or manage his fleets, a player must wisely allocate and spend Command Counters.
+
+\subsection{Control Markers}
+At the beginning of the game, each player is provided with a generous number of flag-shaped Control Markers, each bearing the insignia of that player's race. The Control Markers are used to represent a race wherever appropriate, such as on the Victory Point Track, on successfully achieved Objective Cards, and (most often) to indicate ownership of planets.
+
+\subsection{Trade Good Counters}
+These counters represent the wealth and rewards of interstellar commerce. They are primarily obtained by active trade agreements while the Trade Strategy Card is being executed. A player's Trade Goods can be used as a direct substitute for either resources or influence, and are frequently used as currency among players to pay for bribes or other considerations.
+
+\subsection{Victory Point Track}
+The Victory Point Track is used to indicate each player's accumulation of victory points. Note that the main side of the Victory Point Track has spaces numbered from 0 to 10, whereas the reverse side is numbered 0 to 14. The reverse side is be used with the optional rule “The Long War” found on page 57.
+
+\subsection{Speaker (First Player) Token}
+This token is claimed each round by the player who selects the Initiative Strategy Card during the Strategy Phase. The player who controls the Speaker Token always chooses the first Strategy Card during the next Strategy Phase.
+
+\subsection{Ground Force and Fighter Unit Supplement Tokens}
+The Ground Force and the Fighter units are the only units in the game that players may purchase unlimited quantities of. All other unit types are limited to the figures provided with the game. The Fighter and Ground Force supplement tokens represent the extra Fighter and Ground Force units that players may add to their forces.
+
+\subsection{Race Sheets}
+Enclosed in your game, you will find 10 (\SEf{14 with SE}, \STf{17 with SotT}) large cardboard sheets, each representing one of the great races of the TI universe. After selecting a race to play, each player receives the corresponding Race Sheet, which provides each player with specific information for his race as well as helpful game information tables. The Race Sheet is also used for keeping track of a player’s active Command Counters and Trade Goods.
+\begin{STbox}
+A race sheet for the Lazax is also included in SotT. The Lazax race is only used in the “Fall of the Empire” scenario (see page 76). Cards and Markers are also provided for this race.
+\end{STbox}
+\begin{SEbox}
+    
+\subsection{Race-Specific Technologies}
+Each of the 17 races now has one Race-Specific Technology. These optional Technology cards may only be acquired by the appropriate race (see page 64). In SotT there is a second race-specific Technology per Race included.
+
+\subsection{Facility Cards}
+These cards represent refineries and colonies that players may build on a planet to increase the planet’s resources or influence value. See page 67 for details.
+
+\subsection{Unit Reference Cards}
+The unit reference cards provide players with an image of each unit type and its game stats.
+
+\subsection{Shock Troop Tokens}
+Shock Troops represent battle-hardened, veteran Ground Forces. These special Ground Forces are much more powerful and have special rules governing them (found on page 65).
+
+\subsection{Space Mine Tokens}
+With the new Space Mines option, Cruisers have the ability to deploy space mines. Ships moving into a system that contains space mines could be destroyed before combat. See details on page 66.
+
+\subsection{Mecatol Rex Custodian Tokens}
+These tokens represent guardians of Mecatol Rex. Their optional use is described on page 68.
+
+\subsection{Artifact Tokens and Objective Cards}
+These tokens represent four ancient relics of power that are hidden somewhere through out the galaxy. Each Artifact also has a corresponding Special Objective card worth 1 Victory Point to its controller., See details on page 65.
+
+\subsection{Wormhole Tokens}
+Special Wormhole tokens have been included for use in optional map setups.
+
+\end{SEbox}
+
+\begin{STbox}
+\subsection{Agenda Cards}
+These cards replace the Political Card deck when playing the “Fall of the Empire” scenario.
+
+\subsection{Flagship Cards}
+Each of the 17 races now has the ability to build its own Flagship, a powerful warship with unique race-specific abilities. These optional ships may only be built by the appropriate race (see page 70).
+
+\subsection{Mercenary Cards}
+These cards represent Mercenaries that players may hire using the new Trade III Strategy (s. page 72).
+
+\subsection{Promissory Note Cards}
+Players can now offer Promissory Notes in the Galactic Council. These new cards are used with the new Political II and Assembly II Strategy Cards (see page 74).
+
+\subsection{Representative Cards}
+Each of  the races has 3 Representatives that players may choose from to send to the Galactic Council. These optional cards are used with the new Political II and Assembly II Strategy Cards (see page 13).
+
+\subsection{Treaty Cards}
+These cards are only used in the “Fall of the Empire” scenario. Players can make alliances with each other using these cards.
+
+\subsection{Space Domain Counters}
+These new counters are used with the Final Frontier option. See page 70 for more information).
+
+\subsection{Mercenary Tokens }
+These tokens mark the locations of Mercenaries (a new type of unit) on the board. They are double-sided to display whether the Mercenary is in space or on a planet. The appropriate battle value for each Mercenary is also displayed on each side.
+
+\subsection{Race-specific Technology Tokens }
+Special Tokens have been included for use with the Ghosts of Creuss’ and the Embers of Muaat’s special abilities.
+
+\end{STbox}
+\chapterimage{rexbanner.jpg}
+\chapter{Setup}\index{Setup}
+\begin{figure}[h!]
+    \centering
+    \includegraphics[width=\textwidth]{gametable.jpg}\\
+    \caption{8 player game. Photo by tintii@bgg https://boardgamegeek.com/image/2355207}
+    \label{fig:game_table}
+\end{figure}
+
+\section{Number of Players}
+These rules are written assuming that you will be playing TI with 6 players. TI plays just as well with
+fewer players, and rules for playing with 3-8 players are provided on page 53 of this rules set.
+
+
+\section{Setup and Play Area Organization}
+
+\begin{figure}[!h!]
+    \centering
+    \includegraphics[width=\textwidth]{playarea.jpg}\\
+    \caption{Suggested Player Area}
+    \label{fig:play area}
+\end{figure}
+
+\begin{figure}[!h!]
+    \centering
+    \includegraphics[width=\textwidth]{commonplayarea.jpg}
+    \caption{Suggested Common Play Area}
+    \label{fig:play area}
+\end{figure}
+
+Before you start playing, follow the steps below:
+\begin{enumerate}
+\item Separate the 10 Home Systems from the other hexagonal game-board pieces. Randomize the Home Systems face down and allow every player to draw one at random. This process determines which race a player will control throughout the game. All players then take the Race Sheet, Control Markers, Trade Cards, and Command Counters corresponding to their race.
+\item Each player selects one of the six available colours and takes the plastic units and Technology Deck corresponding to that colour.
+\item Find an area of the table that is convenient for all players to reach. Designate this space the "common play area." Then shuffle the Action Card deck and the Political Card deck and place them separately in the common play area. Also place the Fighter and Ground Force Supplement Counters in the common play area.
+\item Each player takes the individual Planet Cards corresponding to the planets of his Home System and places these face up in his play area. Place the remaining Planet Cards, representing the neutral planets at the start of the game, in the common play area.
+
+\item Place all the Trade Goods Counters in a single pile (the "Trade Supply") in the common play area.
+\item Now place the 8 Strategy Cards side-by-side in numerical order with their "active" side up, prominently in the common play area.
+\item Create the Objective Deck, by following the directions in the "Preparing the Objective Cards" sidebar. Do not forget to place the unused Secret and Public Objective Cards back in the box, while allowing no players to look at them.
+\item Now place the Victory Point Track in the common play area and place one Control Marker for each player in the space marked "0."
+\item Players must now create the game board (or “galaxy”). Please read and carry out the instructions for doing so in the "Setting up the Galaxy" sidebar on page 15 before proceeding.
+\item After the galaxy has been created, all players place their "setup units" (as indicated by their Race Sheets) on their Home Systems. If a Home System contains several planets, any Space Dock, Ground Forces, and PDS may be placed among them according to the player’s wishes.
+\item All players then find and place their "Starting Technology" cards face up in their respective play areas. All players now take their starting Command Counters from their reinforcements, placing them on their Race Sheets as follows: \textbf{2 Command Counters in the Strategy Allocation area, 3 Command Counters in the Command Pool area, and 3 Command Counters in the Fleet Supply area (with the "Fleet" side up)}.
+\end{enumerate}
+
+
+\subsection{Reinforcements}
+Every player maintains a “reinforcement” area consisting of his unused plastic units and Command Counters. Whenever a player builds a unit, it is taken from his available reinforcements and thereafter placed on the board. (An exception to this is the Fighter and Ground Force Supplement counter, see later). Whenever a player receives a new Command Counter, it is taken from his available reinforcements and placed in one of the three appropriate boxes on his Race Sheet (Command Pool, Fleet Supply, or Strategy Allocation).
+
+\subsection{Preparing the Objective Cards}
+Before the game begins, the Secret Objective Cards must be distributed and the Public Objective Deck properly prepared. First separate all the Objective Cards into the three different types: Secret Objectives, Public “Stage I” Objectives, and Public “Stage II” Objectives. Then proceed to the following:
+
+\begin{enumerate}
+\item Shuffle the 10 Secret Objective Cards and deal a random card face down to every player. All players should read their Secret Objective Card and then place the card face down in their play area. A player is never allowed, for whatever reason, to show an opponent his Secret Objective Card. Place the remaining Secret Objective Cards back in the box, allowing no player to look at them.
+\item Now take the 10 Stage II Public Objective Cards and remove the “Game Over” card. Shuffle the remaining 9 Stage II cards and draw 3 random cards (at all times keeping them hidden from all players). After drawing the 3 random cards, take the “Game Over” card and shuffle it with the 3 randomly-chosen cards. You should now have 4 randomized Stage II Public Objective Cards, one of which is the “Game Over” card. Place these 4 cards face down in a stack in the common play area. Place the remaining Stage II cards back in the box, allowing no player to look at them.
+\item Then shuffle the 10 Stage I Public Objective Cards and draw 6 random cards. Place the 6 cards on top of the 4 Stage II cards, now forming a single deck of 10 Public Objective Cards in the common play area. This deck always consists of 6 random “Stage I” cards on top of 4 random “Stage II” cards (one of which is the “Game Over” card). This deck is the “Public Objective Deck.”
+\end{enumerate}
+
+\begin{STbox}   
+     It is important that the unused Objective Cards (Secret, Public Stage I \& II) are placed back in the box so they remain hidden from players both before and during the game. Otherwise, experienced players would be able to deduce which objectives are in play before they are revealed.
+
+\end{STbox} 
+
+\emph{You are now ready to start the game.}
+
+
+
+\chapterimage{twilight-imperium.jpg}
+\chapter{Rules}\index{Rules}
+
+\section{Objective of the Game}\index{Objective}
+To win a game of TWILIGHT IMPERIUM ("TI"), players seek to accumulate a total of 10 victory points by achieving objectives and carefully choosing helpful strategies. The game ends when one player gains his 10th victory point or immediately after any other game-ending condition applies (see later).
+
+\section{Creating the Galaxy}
+
+\begin{figure}[!h!]
+    \centering
+    \includegraphics[width=\textwidth]{creating_galaxy.jpg}
+    \caption{Galaxy creation schematics}
+    \label{fig:galaxycreation}
+\end{figure}
+TI uses a unique game board consisting of multiple hexagon pieces (“systems”) that are brought together in a unique combination at the beginning of every game. Players build the galaxy by following these steps:
+
+\begin{enumerate}
+\item After all players have drawn their Home Systems, find the Mecatol Rex system and place it in the middle of the table. Then randomly determine one player to be “first player. Give the “Speaker“-Token to the first player. He then shuffles the remaining 32 systems, \emph{randomly removes two systems} (by placing them back in the box without looking at them), and deals five systems, face down, to every player. Players may look at their dealt systems but should not show them to the other players.
+\item The first player now selects one of the sides of Mecatol Rex, and drags his Home System about two feet towards himself in a straight line away from the chosen side (see diagram). Then the player to his left does the same, etc., until all players have chosen a side and placed their Home Systems on the table (note that the sixth player must chose the last remaining side of Mecatol Rex). Players should now shift their seating around the table to best accommodate their Home System placement.
+\item Then players, in clockwise order, starting with the first player, begin creating the galaxy by placing, one at a time, a single system face up adjacent to the Mecatol Rex system. After the first ring around Mecatol is completed, players continue to place systems in the second ring until that is completed, and then finally proceed to the third ring.
+\end{enumerate}
+
+When all the systems are placed, the galaxy is finally created. The following rules apply to placing systems:
+
+\begin{itemize}
+\item A system cannot be placed in the second ring before the first ring surrounding Mecatol Rex has been completed. Likewise, a tile cannot be placed in the third ring before the second ring is completed (see diagram).
+\item As soon as the correct placement for your Home System becomes available, connect your Home System to the galaxy at its fixed spot (which is exactly 3 systems out from the chosen side of Mecatol Rex, see diagram). Connecting your Home System is automatic and does not cost you a placement “turn.”
+\item You may not place a Special System (with an inner red border) adjacent to another Special System, unless you have no other option.
+\item The order of placement switches counter clockwise after all players have placed a round of tiles and yet again clockwise after that, etc. This in effect will make the player, who placed the last system, place the first system in the next round (thus actually placing two systems in a row). Example of turn order: P1, P2, P3, P4, P5, P6, P6, P5, P4, P3, P2, P1, P1, P2…
+\item If you placed a system that did not contain a planet during your last placement, you must, if able, place a system that \emph{does} contain a planet during your next placement. If you are unable to do so, you must reveal your remaining systems to the other players to prove this. Then place one of your available systems.
+\end{itemize}
+
+When creating the board, the actual shape of the galaxy and the position of Home Systems will differ depending on the number of players. If you are playing a game with less than six players, please consult the optional rules on page 53 of this rules booklet.
+
+\begin{SEbox}
+    \subsection{Game Setup with the New Systems from the Expansion Shattered Empire}
+    Due to the addition of many new systems, players will need to remove more random systems before setting up the galaxy than specified in the base game.
+
+The first player should place these systems back in the box during setup without looking at them.
+
+Remove the following systems instead of the systems specified on page 53 of the original rulebook:
+\begin{itemize}
+\item 3 Players: Remove 7 empty, 6 Special, and 18 Regular Systems (with planets).
+\item 4 Players: Remove 4 empty, 5 Special, and 14 Regular Systems (with planets).
+\item 5 Players: Remove 4 empty, 5 Special, 14 Regular Systems (with planets), and 1 random system.
+\item 6 Players: Remove 4 empty, 5 Special, 14 Regular Systems (with planets), and 2 random systems.
+\end{itemize}
+\subsection{Larger Galaxy Games}
+With five or six players, players may wish to set up an additional outer ring. To do this, fewer tiles are removed during setup.
+\begin{itemize}
+\item 5 Players: Deal out every tile, so that each player has 11 tiles. Then create the galaxy as normal. (Unlike the standard 5-player setup described on page 32 of the original rules, no random system is placed adjacent to Mecatol Rex.)
+\item 6 Players: Remove 1 random hex and then deal out the rest, so that each player will have 9 tiles.
+\end{itemize}
+
+Then create the galaxy as described on page 8 of the original rulebook. However, in step 3 of “Creating the Galaxy,” continue placing systems until there are 4, rather than just 3, rings around Mecatol Rex.
+\end{SEbox}
+
+
+\begin{STbox}
+\subsection{Game Setup with the New Systems from both Expansions}
+
+Due to the addition of many new systems, as well as the systems introduced in Shattered Empire, players now have more options when setting up the galaxy. Instead of removing the systems specified on page 53 of the original rulebook, players create three piles of systems; one pile of Special Systems (all systems with red borders), one pile of empty systems (all systems with no planets), and one pile of Regular Systems (all remaining non-Home Systems). Without looking at the tiles, players deal a number of random systems into a galaxy pile and shuffle it. All remaining tiles are returned to the game box without looking at them. Players then use the systems in this galaxy pile to create the galaxy (following all normal setup rules).
+
+\begin{itemize}
+\item 3 Players: Shuffle together 3 Special, 5 empty, and 16 Regular Systems.
+\item 4 Players: Shuffle together 4 Special, 8 empty, and 20 Regular Systems.
+\item 5 Players: Shuffle together 4 Special, 8 empty, and 20 Regular Systems. Randomly remove 1.
+\item 6 Players: Shuffle together 4 Special, 8 empty, and 20 Regular Systems. Randomly remove 2.
+\SEf{
+\item *7 Players: Shuffle together 9 Special, 12 empty, and 34 Regular Systems, randomly remove 2
+\item *8 Players: Shuffle together 9 Special, 12 empty, and 34 Regular Systems, randomly remove 3
+\item *5 Players (Larger Galaxy): Shuffle together 9 Special, 12 empty, and 34 Regular Systems.
+\item *6 Players (Larger Galaxy): Shuffle together 9 Special, 12 empty, and 34 Regular Systems. Randomly remove 1.\\
+\item *Requires the Shattered Empire expansion.}
+\end{itemize}
+\end{STbox}
 
 % That's how science is made, thinking and testing and thinking again, creating your own scientific method, comming up with hypothesis, learning what might work and what not, using your insticts. 
 
