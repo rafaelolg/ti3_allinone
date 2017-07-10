@@ -1,5 +1,6 @@
 %!TEX spellcheck
-
+%!TEX jobname = ti3allinone
+%!TEX output_directory = out
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %  My documentation report
 %  Objetive: Explain what I did and how, so someone can continue with the investigation
@@ -376,10 +377,10 @@ Enclosed in your game, you will find 10 (\SEf{14 with SE}, \STf{17 with SotT}) l
 \begin{STbox}
 A race sheet for the Lazax is also included in SotT. The Lazax race is only used in the “Fall of the Empire” scenario (see page 76). Cards and Markers are also provided for this race.
 \end{STbox}
-\begin{SEbox}
-    
+\begin{SEbox}    
 \subsection{Race-Specific Technologies}
-Each of the 17 races now has one Race-Specific Technology. These optional Technology cards may only be acquired by the appropriate race (see page 64). In SotT there is a second race-specific Technology per Race included.
+
+Each of the 17 races now has one Race-Specific Technology. These optional Technology cards may only be acquired by the appropriate race (see page 64). \STf{In SotT there is a second race-specific Technology per Race included.}
 
 \subsection{Facility Cards}
 These cards represent refineries and colonies that players may build on a planet to increase the planet’s resources or influence value. See page 67 for details.
@@ -853,7 +854,32 @@ After moving units into the activated system (being careful not to exceed his Fl
 \label{fig:example_activation}
 \end{figure}
 
+\subsection{Status Phase} % (fold)
+\label{sub:status_phase}
 
+The Status Phase, when compared to either the Strategy or Action Phase, is a straightforward experience. It is during the Status Phase that many of the game functions are "reset," such as players refreshing Planet Cards, discarding Command Counters from the board, etc. It is also during the Status Phase that players may gain victory points by meeting the requirements of a Public and/or Secret Objective Card. To resolve the Status Phase, follow the Status Sequence below:
+\subsubsection{The Status Sequence}
+\begin{enumerate}
+    \item  Qualify for Public/Secret Objective Cards
+\item Repair Damaged Ships
+\item Remove Command Counters
+\item Refresh Planet Cards
+\item Receive 1 Action Card and 2 Command Counters
+\item Redistribute Command Areas
+\item Return Strategy Cards
+\end{enumerate}
+
+\subsection{Qualify for public/secret Objectives} % (fold)
+\label{sub:qualify_for_public_secret_objectives}        
+In the order of play, each player may announce that he has met the requirements of one face-up Public Objective Card and/or his Secret Objective Card.
+After a player announces that he has met the objectives of a face up Public Objective Card, he must prove to his opponents that his claim is valid.
+After doing so, the player places one of his Control Markers on the claimed Objective Card (indicating that he has claimed that objective), and then advances his Control Marker on the Victory Point Track the appropriate number of spaces.
+Once a player has received Victory Points for a specific Objective Card, he may not qualify for that Objective Card again.
+In addition, if a player has met the requirements of his Secret Objective Card, he may now reveal the card, prove that its objectives are met, and then claim its victory points.
+
+\emph{Important Exception: A player may never qualify for a Public or Secret Objective Card if he does not control all the planets in his Home System.}
+% subsection qualify_for_public_secret_objectives (end)
+% subsection status_phase (end)
 
 % subsection example_of_activation_and_movement (end)
 % subsection end_of_the_action_phase (end)
