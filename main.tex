@@ -32,9 +32,9 @@
 \usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
 
 % Bibliography
-\usepackage[style=alphabetic,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
-\addbibresource{bibliography.bib} % BibTeX bibliography file
-\defbibheading{bibempty}{}
+% \usepackage[style=alphabetic,sorting=nyt,sortcites=true,autopunct=true,babel=hyphen,hyperref=true,abbreviate=false,backref=true,backend=biber]{biblatex}
+% \addbibresource{bibliography.bib} % BibTeX bibliography file
+% \defbibheading{bibempty}{}
 
 \input{structure} % Insert the commands.tex file which contains the majority of the structure behind the template
 
@@ -869,7 +869,7 @@ The Status Phase, when compared to either the Strategy or Action Phase, is a str
 \item Return Strategy Cards
 \end{enumerate}
 
-\subsection{Qualify for public/secret Objectives} % (fold)
+\subsubsection{Qualify for public/secret Objectives} % (fold)
 \label{sub:qualify_for_public_secret_objectives}        
 In the order of play, each player may announce that he has met the requirements of one face-up Public Objective Card and/or his Secret Objective Card.
 After a player announces that he has met the objectives of a face up Public Objective Card, he must prove to his opponents that his claim is valid.
@@ -878,6 +878,164 @@ Once a player has received Victory Points for a specific Objective Card, he may 
 In addition, if a player has met the requirements of his Secret Objective Card, he may now reveal the card, prove that its objectives are met, and then claim its victory points.
 
 \emph{Important Exception: A player may never qualify for a Public or Secret Objective Card if he does not control all the planets in his Home System.}
+
+\subsubsection{Winning the Game}
+When a player advances his Control Marker to the 10th step of the Victory Point Track, he has gained the power needed to claim the Imperial Throne on Mecatol Rex. The Winnaran Custodians will step aside for their new emperor, who must lead the galaxy to a new age of prosperity and peace.
+
+As players, one at a time, qualify for Objective Cards by following the order of play, one player will always reach 10 victory points first. That player is the winner of the game, even if other players would also have achieved 10 or more victory points later in the order of play.
+
+It is also possible for a player to win the game during this step if he is the first to meet the requirements of either the “Supremacy” or “Domination” card (provided that either card is face up in the common play area).
+
+\begin{FFGbox}
+\subsubsection{The “Imperium Rex“ Objective Card}
+While the Primary Ability of the Imperial Strategy card is resolved, it is possible that the “Imperium Rex” objective card is drawn from the Objective Deck. When this card is drawn, the game ends immediately and a winner is declared The winner is the player who has the most victory points (the active player does not receive the 2 victory points). If there is a tie, then the greater number of resolved Objective Cards breaks the tie; if there is still a tie, then the greater number of planets, then unused Command Counters, and then the total number of Command Counters on a player's Race Sheet. If still tied, then the game ends in a draw between the tying players.
+\end{FFGbox}
+
+\subsubsection{Repair Damaged Ships}
+All damaged Dreadnought and War Sun units are returned to their normal upright position on the game board. They are no longer considered to be damaged.
+
+\subsubsection{Remove Command Counters}
+Each player now removes all his Command Counters from the game board, placing them in his reinforcements pile.
+
+
+\subsubsection{Refresh Planet Cards}
+Each player refreshes his exhausted Planet Cards by turning them face up.
+
+\subsubsection{Players receive 1 Action Card and 2 Command Counters}
+Each player now receives one Action Card from the Action Card deck and two Command Counters from his reinforcements (placing each Command Counter in either of the three appropriate areas of his Race Sheet).
+
+\subsubsection{Redistribute Command Areas}
+Each player (in order of play, if necessary) may now redistribute the Command Counters between the Strategy Allocation, Command Pool, and Fleet Supply areas on his Race Sheet. If a player reduces the number of Command Counters in his Fleet Supply, remember to check that all of his fleets on the board are in compliance with his new fleet size limit.
+
+\subsubsection{Return Strategy Cards}
+Each player now returns his Strategy Card to the common play area. Here the eight Strategy Cards will be ready for the beginning of the next game round.
+
+
+\subsection{End of a Round}
+After the Status Phase has been completed (and provided no winner has yet emerged), the game round is over and another game round begins with a new Strategy Phase. In this way, the game is played over a series of game rounds until a winner has been determined.
+
+
+\chapterimage{board.jpg} % Chapter heading image
+\chapter{Combat}
+
+
+\section{Space Battles}
+If the active system contains ships belonging to the active player and ships belonging to an opponent, a
+Space Battle must be fought.
+
+A Space Battle is fought over a consecutive number of combat rounds until only ships of one player remain (or the ships of both players have been simultaneously destroyed).
+
+\subsection{Before Combat}
+Before the actual Space Battle begins, resolve any pre-combat actions such as Destroyer Anti-Fighter
+Barrage and then Sabotage Runs (the Sabotage Run is an optional rule found on page 63).
+See also Chapter 15.2 Combat on Page 99 for detailed pre-combat actions order.
+
+\subsubsection{Destroyer Anti-Fighter Barrage}
+
+Both attacker and defender are allowed to use Destroyer Anti-Fighter Barrage, see Chapter 11.7 Destroyer Unit (Page 51).
+
+Before the first round of Space Battle, roll two dice for each Destroyer unit in the battle. For every result equal to or higher than the Destroyer's combat value (all combat values can be found on the unit table on every player's Race Sheet), the opponent must take one Fighter unit as an immediate casualty. Such eliminated Fighter units are removed immediately and placed back among a player's reinforcements; they do not receive return fire and will not participate in the upcoming Space Battle.
+
+A fleet containing no Fighter units is unaffected by pre-combat Destroyer fire.
+\subsection{Battle Round}
+After finishing any "before combat" actions, continue to the actual combat. A Space Battle always follows the Space Battle Sequence:
+\subsubsection{The Space Battle Sequence}
+\begin{enumerate}
+    \item Announce withdrawals/retreats
+    \item Roll combat dice
+    \item Remove casualties
+    \item Execute withdrawals/retreats
+\end{enumerate}
+After step 4, if both players still have ships remaining in the system, repeat the Space Battle Sequence until only one player has ships remaining, or all ships in the system have been destroyed.
+
+Below, each step of the Space Battle Sequence is described in detail:
+
+
+\subsection{Announce Retreats/Withdrawals}
+The attacker first has the option to announce his withdrawal from battle. If the attacker chooses \emph{not} to declare a withdrawal, then the defender may declare a retreat. Note that if the attacker does decide to withdraw, the defender may not declare a retreat. Any actual withdrawals/retreats occur at the last step of the combat phase. This means that all Space Battles will have at least one round of combat.
+
+\subsection{Roll Combat Dice}
+During this step, both players simultaneously roll one combat die for every one of their spaceships in the battle (with the exception of the War Sun, which rolls three dice). For each result that is equal to or higher than the combat value of its ship, a "hit" is scored (all base combat values can be found on the unit table on a player’s Race Sheet). Players must remember the total number of successful hits as they move to the next step.
+
+\emph{Example: The attacking player has a fleet of three Cruisers and one Dreadnought. During the first battle round, he rolls for his attacking ships. He takes three dice for the Cruisers (Combat Value 7) and rolls a 2, 5, and 7 -- one hit. Then he takes one die for his Dreadnought and rolls a 6 -- a hit. The attacking player announces that he has inflicted a total of two hits on the defending fleet. The defending player has two Fighters (supported by a Space Dock in the system) and one Destroyer. He takes two dice for the Fighter units and rolls a 3 and a 5 -- both misses. Then he takes one die for his Destroyer and rolls a 0 (a 10) a hit. The defending player announces that he has inflicted one total hit on the attacking fleet.}
+
+\subsection{Remove Casualties}
+Each player must now take a number of casualties equal to the number of hits scored by the opponent in step 2. First the attacking player removes his casualties. For every casualty, he must destroy one of his ships of his choice or damage one of his Dreadnoughts or War Suns (if a damaged Dreadnought or War Sun receives a second hit, it is destroyed). Destroyed ships are placed among a player's reinforcements, and become available for production once again. After the attacking player has removed all his casualties, the defending player must then remove his casualties.
+Note that whenever a player removes casualties in TI, the casualty is always determined by the affected player. Since Fighters are the cheapest unit to produce, they make effective "cannon fodder" and are thus typically among the first units to be chosen as casualties.
+
+\emph{Example: The defending player scored one hit. The attacking player then chooses to damage his Dreadnought (soaking up a casualty). The attacker scored a total of two hits. The defending player chooses to remove two Fighter units as casualties and places them back with his reinforcements.}
+
+\subsection{Execute Withdrawals/Retreats}
+If the attacking player announced a withdrawal or the defending player announced a retreat during step 1 of the Space Battle Sequence, that player may now execute the withdrawal/retreat, following the rules below.
+
+\begin{itemize}
+\item A withdrawal or retreat is not allowed if, at this point in the battle, the opposing player has no units left in the system. Even if a player announced a withdrawal or retreat at the beginning of the combat round, if he has somehow managed to destroy all the opposing units, the withdrawal/retreat is cancelled and the units must remain in the system.
+\item When executing a withdrawal or retreat, a player must withdraw his entire fleet to an adjacent system that has previously been activated by the withdrawing/ retreating player that contains no enemy ships (but it can contain enemy planets with GFs, PDS and Space Docks). If a player has no previously activated systems adjacent to the contested system, he may not withdraw or retreat. (Changed in the Online-Errata: In former Versions there was no constraint, the system a player is withdrawing/retreating to, must not contain any enemy ships.)
+
+    \item 
+\end{itemize}
+After a successful withdrawal or retreat, make sure that the withdrawing/retreating player is still in compliance with his Fleet Supply (see rules for Fleet Supply on page 35) and has sufficient Fighter capacity (see the Fighter unit description on page 50) in the new system. If not, he must immediately destroy the excess ships.
+
+\section{End of Space Battle}
+After the first Space Battle round is completed, if both players still have surviving ships in the system, another Space Battle round begins. This continues until only one player has ships in the system (or the ships of both players have been eliminated).
+
+\begin{FFGbox}
+\subsection{Receiving Planet Cards}
+Whenever a player receives a Planet Card, by either successfully taking over a neutral planet or by successfully invading an enemy planet, he claims the corresponding Planet Card and places it exhausted in his play area. A newly claimed Planet Card is always received exhausted, even if the previous owner had not yet exhausted it.
+\end{FFGbox}
+
+
+\subsection{Space Battle Example}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.77\textwidth]{battle_example.jpg}
+    \caption{Space Battle Example}
+    \label{fig:space_battle_example}
+\end{figure}
+
+\begin{enumerate}
+    \item In this example, the Xxcha player has just activated a N’orr system, moving a fleet of one Carrier unit (carrying two Ground Forces), three Fighter units (also supported by the Carrier) and one Cruiser unit. As the N’orr has two Destroyer units in the battle, and the Xxcha has Fighter units, the N’orr Destroyers each will roll two dice for their pre-combat “Destroyer Anti-Fighter Barrage.” The results are 2, 2, 5, and 6 (all misses). The players then proceed to the first step of the Space Battle Sequence. The Xxcha player announces that he will not withdraw, and the N’orr player announces that he does not wish to retreat.
+
+\item The Xxcha player now rolls combat dice for his units. His Fighters roll a 3, 5, and a 10 (one hit), his Carrier a 6 (a miss), and finally his Cruiser a 8 (one hit). The Xxcha player announces that he has made 2 successful hits. Then the N’orr player rolls three combat dice for his spaceships. The N’orr Cruiser rolls a 8 (a hit) and the two Destroyer units roll a 9 and a 10 (both hits). The N’orr player announces that he has made 3 successful hits. As casualties, the Xxcha player elects to destroy three Fighter units. The N’orr player removes his two Destroyer units.
+
+\item The second round of Space Battle combat now begins. The Xxcha player declares that he will not withdraw and the N’orr that he will not retreat. The Xxcha player then proceeds to roll a 9 with his Cruiser (hit), and 1 with his Carrier (a miss). The N’orr player rolls a 3 with his Cruiser (a miss). As he must sustain one casualty, the N’orr player must destroy his remaining Cruiser, and the Space Battle is now over with the Xxcha player victorious. During the Planetary Landings step of the Activation Sequence, the Xxcha plans to land the two Ground Forces on the N’orr planet, starting an Invasion Combat.
+
+\end{enumerate}
+
+
+
+\section{Invasion Combat}
+After the active player has landed one or more Ground Force units during the Planetary Landings step of a Tactical Action, an Invasion Combat must be fought if the destination planet holds any enemy Ground Force units. Invasion Combat is executed almost identically to Space Battle, with the notable exception that no withdrawals or retreats are allowed.
+
+\subsection{Before Combat}
+Before the actual Invasion Combat begins, players must resolve pre-combat actions such as planetary bombardments and defensive PDS fire.
+
+\subsubsection{Bombardments}
+Dreadnought and War Sun units in the activated system may bombard a planet before the player undertakes Invasion Combat (exception: a War Sun unit may bombard a planet even if no Invasion Combat is about to take place). Simply roll one combat die for every Dreadnought, three for every War Sun, and remove one enemy Ground Force on the contested planet for every result equal to or higher than the combat value of the bombarding unit. Remember that a Dreadnought may not bombard a planet that contains at least one enemy PDS due to the presence of a planetary shield. Ground Forces destroyed by bombardment are removed immediately, do not receive return fire, and will not participate in the upcoming Invasion Combat.
+
+\subsubsection{PDS Fire}
+After the attacking player has finished his bombardment, the defending player may fire a single shot with each PDS unit on the contested planet. The defending player rolls a die for every PDS unit present, and for every result equal to or greater than the combat value of the PDS unit, an invading Ground Force is destroyed. Attacking Ground Force units destroyed by defending PDS do not receive return fire and will not participate in the upcoming Invasion Combat.
+
+\subsection{Invasion Combat Round}
+After any bombardment and defensive PDS fire has been resolved, the players proceed to the Invasion
+Combat. Like a Space Battle, Invasion Combat is fought over a series of consecutive combat rounds until only one player's Ground Forces (or none) remain. To resolve an Invasion Combat round, follow the Invasion Combat Sequence:
+\subsubsection{Invasion Combat Sequence}
+\begin{enumerate}
+\item Roll combat dice
+\item Casualties are removed
+\end{enumerate}
+
+\subsubsection{Roll Combat Dice}
+Both players simultaneously roll one die for every friendly Ground Force unit on the planet. For every result equal to or higher than the combat value of the Ground Force unit, the player scores a "hit." Players must remember their total number of successful hits as they move to the next step.
+
+\subsubsection{Remove Casualties}
+Each player must now take a number of Ground Force unit casualties equal to the number of hits scored by the opponent in step 1. Casualties are, as always, returned to a player's reinforcement pile.
+If, at this point, both players still have Ground Force units remaining on the planet, another Invasion Combat round is initiated. This continues until only one (or no) player has Ground Force units left on the planet.
+
+\subsubsection{Invasion Success?}
+If all defending Ground Forces were destroyed and at least one attacking Ground Force survived the battle, the invasion is a success. All defending PDS units and any Space Dock on the planet are immediately destroyed. The attacking player then claims the Planet Card from the previous owner and places it, exhausted, into his play area. Since combat is simultaneous, it is possible that all the Ground Forces on both sides were destroyed. If this is the case, the defending player retains control over the planet and simply places one of his Control Markers on the vacant planet to indicate this.
+
 % subsection qualify_for_public_secret_objectives (end)
 % subsection status_phase (end)
 
