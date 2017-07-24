@@ -71,9 +71,9 @@
 
 
 
-\noindent Originally edited by Oigelb (http://boardgamegeek.com/user/Oigelb).
-Many Corrections by kiminoboku (http://www.boardgamegeek.com/user/kiminoboku).\\ 
-This version is also edited by Rafaelolg (http://boardgamegeek.com/user/rafaelolg)\\
+\noindent Originally edited by Max Fuhrmann (bgg:Oigelb) (http://boardgamegeek.com/user/Oigelb).
+Many Corrections by bgg:kiminoboku (http://www.boardgamegeek.com/user/kiminoboku).\\ 
+This version is also edited by bgg:rafaelolg and bgg:ZaRaZa (http://boardgamegeek.com/user/[rafaelolg, ZaRaZa])\\
 \\
 
 \noindent Game Design (all editions): Christian T. Petersen\\
@@ -1021,7 +1021,7 @@ After the attacking player has finished his bombardment, the defending player ma
 After any bombardment and defensive PDS fire has been resolved, the players proceed to the Invasion
 Combat. Like a Space Battle, Invasion Combat is fought over a series of consecutive combat rounds until only one player's Ground Forces (or none) remain. To resolve an Invasion Combat round, follow the Invasion Combat Sequence:
 \subsubsection{Invasion Combat Sequence}
-\begin{enumerate}
+\begin{enumerate}[]
 \item Roll combat dice
 \item Casualties are removed
 \end{enumerate}
@@ -1036,660 +1036,819 @@ If, at this point, both players still have Ground Force units remaining on the p
 \subsubsection{Invasion Success?}
 If all defending Ground Forces were destroyed and at least one attacking Ground Force survived the battle, the invasion is a success. All defending PDS units and any Space Dock on the planet are immediately destroyed. The attacking player then claims the Planet Card from the previous owner and places it, exhausted, into his play area. Since combat is simultaneous, it is possible that all the Ground Forces on both sides were destroyed. If this is the case, the defending player retains control over the planet and simply places one of his Control Markers on the vacant planet to indicate this.
 
-% subsection qualify_for_public_secret_objectives (end)
-% subsection status_phase (end)
 
-% subsection example_of_activation_and_movement (end)
-% subsection end_of_the_action_phase (end)
-% subsection action_phase (end)
-% That's how science is made, thinking and testing and thinking again, creating your own scientific method, comming up with hypothesis, learning what might work and what not, using your insticts. 
-
-% Well, before comming here I didn't think like that, it was just all about being super productive and thinking about doing robots and all kinds of devices with sensors. I had some experience programming in C/C++, no computer science backgound and I had never had an astronomy course.
-
-% This report was written in order to help someone to continue researching about data mining techniques applied in Astronomy, I explain how did I come up with the clustering techniques, my hypothesis, some tests and other ideas I have had, I hope this can help anyone and the research is continued. Anything you may need/questions do not hesitate to contact me, my e-mail address is: \emph{mrs.petzl@gmail.com}, also s part of my own documentation I created a GitHub page where you can download all the codes I programmed and find more information. The link to this page is: \url{https://github.com/LaurethTeX/Clustering}, from the \textsc{readme} file you can acces to all the pages, take your time to surf.
-% %------------------------------------------------
-
-% \subsection{References}\index{References}
-
-% Since I found so much good information about pretty much everything I wanted to know about, I will just create a remark and let you know where you can find more specific information about, just like below.
-
-% \begin{remark}
-% For more information about the cosmological principle, review Chapter 1: Why Learn Astronomy?, page 10, from \textbf{21st Century Astronomy}, \textit{Hester | Smith | Blumenthal | Kay | Voss}, Third Edition, 2010.
-% \end{remark}
-
-% %This statement requires citation \cite{book_key}; this one is more specific \cite[122]{article_key}.
+\chapterimage{rexbanner.jpg}
+\chapter{Other Game Concepts and Rules}
+\section{Races}
 
 
-% %----------------------------------------------------------------------------------------
-% %	CHAPTER 2
-% %----------------------------------------------------------------------------------------
-% \chapterimage{band1.png}
+\begin{SEbox}
+\subsection{Winnaran Yellow Technology Specialty}
+The Winnaran home world is unique in that it is the only planet with a yellow (general) technology specialty. 
+This yellow technology specialty works exactly like the red, green, and blue technology specialties except that the yellow technology specialty does not count for the purpose of fulfilling objectives.
 
-% \chapter{Discovering what to do...}
+\subsection{Saar Space Docks}
+As described on their race sheet, the Clan of Saar’s Space Docks have a base movement of 1. The following rules also pertain to Saar Space Docks:
+\begin{itemize}
+	\item Saar Space Docks may only be built in a system containing a planet that you have controlled for the entire game round.
+	\item Saar Space Docks do not count as ships and therefore do not count towards Fleet Supply and do not participate in Space Battles.
+	\item Saar Space Docks are never blockaded; they are simply destroyed if present with enemy ships.
+	\item Ground Forces and PDS units built in systems containing Saar Space Docks may be placed on any planet you control in the system, or they may go on a Carrier. 
+	If you do not have a planet or Carrier in the system to place Ground Force or PDS units on, you may not build them.
+\end{itemize}
+\end{SEbox}
+\begin{STbox}
+	
+\subsection{Arborec Green Technology Specialty}
+The Arborec home world is unique in that it is the only home planet with a green Technology 
+specialty.
+This green Technology specialty works exactly like it would on any other planet and can even count for the purpose of fulfilling objectives.
 
-% \section{First ideas}\index{First ideas}
-% So, now here you have your first astronomy picture, \footnote{For example purposes the image selected is a picture of M83 through a Wide H-alpha and [N II] filter. } what do you see?, it is a monochrome image, with different levels of brightness, slightly big (8500 x 5000), it looks like a lot of stars making a spiral.
-% \begin{figure}[h]
-%     \centering
-%     \includegraphics[width=0.77\textwidth]{ha-gray-conv-crp.jpg}
-%     \caption{Picuture of the M83 galaxy, image taken from the WFC3 ERS M83 Data Products, http://archive.stsci.edu/prepds/wfc3ers/m83datalist.html}
-%     \label{fig:awesome_image}
-% \end{figure}
+\subsection{Ghosts of Creuss Home Systems}
+The Ghosts of Creuss have two separate Home Systems connected by a “D” Wormhole.
+Both of these systems are considered Home Systems for the purpose of card and game effects. During setup, the Ghosts of Creuss player only places the hexagonal tile in the galaxy.
+He places the non-hexagonal tile in front of him.
+Also, the “D” Wormhole is considered a Wormhole for the purposes of card and game effects.
+\end{STbox}
 
-% How can we learn something about this image, quantize, get useful information? In the next subsections I will explain the first ideas.
+\section{Systems}
+There are three types of systems in TI3:
 
-% \subsection{Superpixel segmentation}
-% The main concept of this is to cut an image into bigger neighborhood sections, so from an image that has $425x10^5$ pixels we can get maybe less than 500 superpixels, and then analyse separately those little sections and identify what kind of intersellar objects are they, look at image \ref{fig:super} it is a self-explanatory example of how a superpixel algorithm works.
-% \begin{figure}[h]
-%     \centering
-%     \includegraphics[width=0.37\textwidth]{combo.jpg}
-%     \caption{Example of a superpixel algorithm}
-%     \label{fig:super}
-% \end{figure}
-% There are many ways to do this and they vary according to color dimensions, methods and number of required superpixels and whether the algorithm is able to find borders and make pixel clasifications.
+\subsection{Home Systems (Interior Yellow Border)}
+These represent the starting systems for each of the 10 great races.
+At the beginning of the game, players randomly draw one of these systems to determine which race they will play.
 
-% \begin{remark}
-% 	You can find some example test I tested with Matlab and with Python in this webapage: \url{https://github.com/LaurethTeX/Clustering/blob/master/Methods.md}, also there is a huge amount of information on th internet about this but here are two pages you might find useful:
-%     \begin{itemize}
-%     	\item Superpixel: Empirical Studies and Applications \\ \url{http://ttic.uchicago.edu/~xren/research/superpixel/}
-%         \item Segmentation Algorithms in scikits-image \\ \url{http://peekaboo-vision.blogspot.ca/2012/09/segmentation-algorithms-in-scikits-image.html}
-%     \end{itemize}
-%     Also there is one article (from IEEE) I found about and might interest you, it's pure computer science,
-%     \begin{itemize}
-%     	\item Normalized Cuts and Image Segmentation \\ \url{http://www.cs.berkeley.edu/~malik/papers/SM-ncut.pdf}
-%     \end{itemize}
-% \end{remark}
+\subsection{Special Systems (Interior Red Border)} \index{special sysytems}
+The Special Systems represent five unique types of interstellar terrain, governed by the following rules:
 
-% \subsection{PCA}
+\subsubsection{Asteroid Field} \index{asteroid field}
+A player's ships may not move through an Asteroid Field unless that player has gained the Antimass Deflector technology. 
+If a player does have the required technology, he may move his ships through an Asteroid Field, but it is never possible, by any means, for a ship to end its movement in an Asteroid Field. An Asteroid Field may never be activated.
 
-% Welcome to Astronomy where you will find more acronyms than words to mention something on articles, lots of fun!, well in this case PCA stands for Principal Component Analysis, the objective of this method is to reduce dimnensionality, tranform the data to another space where is can be manipulated and reduced, there are multiple examples of work that has been done in astronomy applying this technique.
+\subsubsection{Supernova} \index{supernova}
+These fiery dying stars are incredibly dangerous and absolutely impassable. A Supernova may never be activated.
 
-% Therefor, the idea of applying this method is that if we have multiple-wavelenght images of the same target and transform them to PCA space then we will have less dimensionality and it will be easier to process all the data and fins valuable information.\footnote{Before I forget to mention, later I discovered that PCA is not comonly used for datamining preprocessing because it is hard to interpret the information in the output result. Imagine clusters of data on PCA space, how do you make sense to that?}
+\subsubsection{Nebula} \index{nebula}
+A Nebula is governed by the following rules:
+\begin{itemize}
+	\item A Fleet defending a Nebula receives +1 to its combat rolls during any Space Battle here
+	\item Ships can never move through a Nebula (but ships can move into a Nebula via normal activation)
+	\item A ship leaving a Nebula always has its movement reduced to 1 (regardless of technology modifiers and Action Cards).
+\end{itemize}
 
-% \begin{figure}[h]
-%     \centering
-%     \includegraphics[width=0.37\textwidth]{fig_PCA.png}
-%     \caption{A distribution of points drawn from a bivariate Gaussian and centered on the origin of $x$ and $y$. PCA defines a rotation such that the new axes ($x’$ and $y’$) are aligned along the directions of maximal variance (the principal components) with zero covariance. This is equivalent to minimizing the square of the perpendicular distances between the points and the principal components}
-%     \label{fig:pca}
-% \end{figure}
+\begin{SEbox}
+\subsubsection{Ion Storm} \index{ion storm}
+An Ion Storms is governed by the following rules:
+\begin{itemize}
+	\item Ships may never move through an Ion Storm (however, ships can move into an Ion Storm via normal activation).
+	\item PDS Cannons may never be fired at ships inside an Ion Storm.
+	\item Fighters do not roll any dice during combat inside an Ion Storm. 
+	However, Fighters may still be taken as casualties.
+\end{itemize}
+\end{SEbox}
+\begin{STbox}
+\subsubsection{Gravity Rift} \index{gravity rift}
+A Gravity Rift is governed by the following rules:
+\begin{itemize}
+    \item Ships may move into and through a Gravity Rift.
+	\item When a ship moves out of (or through) a Gravity Rift, its controlling player must roll a die. 
+	On a roll of 1–5, the ship is destroyed. 
+	If there are multiple ships moving out of a Gravity Rift on the same activation, a separate roll must be made for each ship. 
+	If a Carrier is destroyed, all Ground Force and Fighter units being carried by that Carrier are also destroyed.
+\end{itemize}
+\end{STbox}
 
-% \begin{remark}
-% 	An example article, where they explain how to apply PCA on multi-wavelenght images and also mentions the pros and cons of using it.
-%     \begin{itemize}
-%     	\item Preserving Structure in Multi-wavelength Images of Extended Objects\\ \url{http://arxiv.org/abs/1101.1679v1}
-%     \end{itemize}
-%     There's a whole section that talks about this subject with a machine learning approach as a preprocessing step in this nice book,
-%     \begin{itemize}
-%     	\item Ivezi{\'c}, \v Z. and Connolly, A.J.
-%          and Vanderplas, J.T. and Gray, A., \textit{Statistics, Data Mining and Machine Learning in Astronomy}, Princeton University Press, Princeton, NJ, 2014.
-%     \end{itemize}
-% \end{remark}
+\subsection{Regular Systems}
+Regular systems are either empty, or contain one to two planets (see the "Planets of Twilight Imperium" sidebar for more information).
+Some regular systems also contain an end of either the Alpha or Beta Wormhole.
+The large majority of the TI galaxy consists of regular systems, and they form the battlegrounds and points of contention for the great races.
+Although considered a regular system, the Mecatol Rex system always forms the centre of the galaxy and is never randomly distributed to players before the galaxy is created.
 
-% \section{Hypothesis}\index{Hypothesis}
-% Our data looks like the images on Fig.\ref{fig:cubes}, and it cointains data from let's say a determined galaxy at different wavelengths, if we assume that the galaxy contains various regions that relate to interstellar objects that can tell, how stars are formed, where, how stars die, where was a star, and other mysteries, I guess we can assume that those certain regions can be identified because they share similar characteristics, the ideas is to find how a galaxy is made from, its contents, apply the concept of the superpixel idea in 3D superpixels. 
-% \begin{figure}[h]
-% 	\centering
-%     \includegraphics[width=0.57\textwidth]{nphoton.jpg}\hspace{1cm}
-%     \includegraphics[width=0.27\textwidth]{data.jpg}
-%     \caption{Illustrations of how a datacube looks like.}
-%     \label{fig:cubes}
-% \end{figure}
+\begin{SEbox}
+	
+\subsection{Refresh Abilities} \index{refresh abilities}
+Some regular systems have Refresh abilities that may be used during the Status Phase.
+A Refresh ability is indicated on the hex by an icon to the right of the planet name and is detailed in the text of the corresponding planet card.
+During the Status Phase, immediately after refreshing planet cards, you may exhaust one or more planets with the Refresh ability to gain the special abilities listed on their planet cards.
+When you exhaust a planet to gain its ability, you do not gain its re sources.
+Refresh abilities may provide 2 Trade Goods, 2 Shock Troops, 2 Ground Forces, or 2 Fighters.
+If the Refresh ability provides units, the units must be placed on the planet that was exhausted to produce them.
+If you are not playing with the Shock Troops option (see page 65), then Refresh abilities that provide Shock Troops provide Ground Forces instead.
 
-% Take the time to think about this, how the data looks like in 3D, how a star looks like in the datacube, imagine it, this is where ideas of how to tackle this problem come from.
-% \begin{figure}
-% 	\centering
-%     \includegraphics[width=0.87\textwidth]{nine.jpg}
-%     \caption{Example of how an object can look in 9 wavelenghts}
-%     \label{fig:nine}
-% \end{figure}
+\subsection{Trade Stations} \index{trade stations}
+Two regular systems contain Trade Stations (Tsion and Sumerian). Trade Stations have a white name box and a space for a Control Marker. Trade stations follow the rules below:
+\begin{itemize}
+	\item No Distant Suns Domain tokens are placed on Trade Stations.
+	\item Trade Stations have a special Refresh ability that gives the controller 2 Trade Goods if exhausted during the Status Phase. See Refresh abilities (above).
+	
+	\item Trade Stations may never be invaded.
+	Instead, whenever a player has ships in a system in which no other player’s ships are present, he immediately places his Control Marker on the station (and gains the corresponding planet card in its exhausted state).
+	The Control Marker stays on the station until another player becomes the only player with ships in the system (at which point the other player places his Control Marker on the system and gains the corresponding planet card in its exhausted state).
+	Control Markers may also be removed from Trade Stations by certain abilities and cards.
+	
+	\item Capturing a Trade Station from an opponent does not break a trade agreement with that opponent.
+	\item Ground Forces, Space Docks, and PDSs may not be placed on Trade Stations.
+	\item Aside from the above exceptions, Trade Stations are still considered planets (with planet cards) for the sake of abilities and other cards that target planets.
+	For example, a player can target a Trade Station with Peaceful Annexation (a power on the new Diplomacy Strategy Card in this expansion) or the Local Unrest Action Card. 
+	(Note, however, that using an ability such as Peaceful Annexation – which gives you control of a planet – on a Trade Station in which another player is the only player with ships in the system is pointless, since that player will immediately regain control of the station.)
+\end{itemize}
 
-% \subsection{Topics you should review}\index{Related topics}
-% This will requere a lot of work, but hey it will be worthy and fun!
+
+\end{SEbox}
+
+\section{Planets}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[]{planet.png}\\
+    \caption{Planets}
+    \label{fig:planets}
+\end{figure}
+
+
+
+% The real points of interest in the TI galaxy are its planets. 
+% Each planet is printed with its name, resource value (R), influence value (I), and possibly a technology specialty (to the left from resource value).
+% When a player successfully invades a planet (neutral or enemy), he immediately claims its corresponding Planet Card.
+% Resources represent a planet's economic surplus, which can be used by its owner to purchase units and technology. 
+% Influence represents a planet's population, knowledge base, and/or political importance. Influence is used to acquire Command Counters, to play certain Action Cards, and to provide vital votes at the Galactic Council.
+% Technology specialties represent a certain local knowledge or a natural resource important to a specific area of science.
+% This provides the owner of the planet with a discount resource towards purchasing advances of that technology type.
+
+
+% \section{Wormholes}
+% In TI, Wormholes are spatial anomalies that connect distant areas of space.
+% A system containing one end of a Wormhole is considered adjacent (even for the purposes of a transfer action) to a system containing another end of its Wormhole type (Alpha or Beta).
+% For example, a ship with a movement rate of 1 may move from a system containing a Beta Wormhole, directly to another system containing a Beta Wormhole (remember that all movement is still part of an Activation Sequence in which ships must end their movement in the activated system).
+% If only one Wormhole of a type is in play, it has no function and is ignored.
+
+% \section{Unit Limitations}
+% Except for Fighters and Ground Forces, players are limited to the number of units provided in the game. If all of a player’s units of a specific type are on the board, that player may not produce additional units of that kind until one is destroyed and returned to the player's reinforcement pile.
+
+% \subsubsection{Scuttling units} \index{scuttling units}
+% At any time during the Status Phase, players are allowed to scuttle (destroy) any of their own units on the board.
+% Scuttled units are simply returned to the player’s reinforcement pile and become available for production during the next Action Phase.
+% Players may not scuttle units until step 1 of the Status Sequence (Qualify for Public/Secret Objectives) is complete.
+
+% \section{Fighter and Ground Force Supplement Counters}
+% Unlike every other unit type, players are allowed to build more Fighter and Ground Force units than supplied with the game.
+% To build these additional units, players must use the Fighter or Ground Force Supplement Counters.
+% These counters are neutral, can be used by any player, and are governed by the following rules: 
 % \begin{itemize}
-% 	\item Astroinformatics and computer science
-%     	\begin{itemize}
-%         	\item Data minig
-%             \item Machine Learning
-%             \item Big Data Analysis
-%             \item Neural Networks
-%             \item Visualization Resources
-%         \end{itemize}
-%     \item Statistics and Image Processing
-%     	\begin{itemize}
-%         	\item Probability Density Function
-%             \item Point Spread Function
-%             \item Full width at half maximum
-%             \item Convolution
-%         \end{itemize}
-%     \item Interstellar medium and star formation
-%     	\begin{itemize}
-%         	\item HII regions
-%             \item Planetary Nebulae
-%             \item Supernova Remnants
-%             \item Molecular Gas
-%             \item All kinds of Nebulae (e.g. dark, refletion)
-%             \item AGN's (Active Galactic Nucleus)
-%         \end{itemize}
-%     \item Astrophysics
-%     	\begin{itemize}
-%         	\item Units (light-years, parsecs)
-%             \item World coordinate system
-%         	\item Light
-%             \item Telescopes
-%             \item Stars and Stellar Evolution
-%             \item Distance, Brightness, Luminosity
-%             \item Galaxies
-%         \end{itemize}
+% 	\item The presence of a Supplement Counter simply states "there is one additional unit of this type here!" 
+% 	\item There must always be at least one actual unit (controlled by the same player) of the appropriate type in the same system, or on the same planet, as a Supplement Counter. 
+% 	\item Players may, at any time, replace any number of Ground Forces and/or Fighters in a system/planet with an equal number of Fighter/Ground Force Supplement Counters as long as at least one original unit remains. 
+% 	\item The actual units are placed back among a player's reinforcements, and the appropriate Supplement Counters are taken from the common play area and placed on the board in the same spot. 
+% 	\item Likewise, players may, at any time, replace Supplement Counters on the board with actual units from their reinforcements (if able). Players must do this when they want to split the forces without sufficient actual units present.
 % \end{itemize}
-% The GitHub page will certainly help you to understand why you need to learn about that, and where to find articles, wepages and books.
-% \subsection{Downloading}
-% First, let's equip ourselves with the basic software you will need in order to start then you may probably find other cool programs and later you will install them. There is also the possibility that your assigned computer will have them installed already but here is a brief description of what you can do with them, most of them are easy to use.
+
+% Be careful that, in multi-planet systems, each planet with Ground Force Supplement Counters contains at least one actual Ground Force unit.
+
+% It is only really necessary for a player to use Supplement Counters if he is about to run out of actual units in his reinforcement pile.
+% In some instances, it is possible that there is too little physical room on a given planet/system, and that a player may wish to create more room by replacing some Ground Force/Fighter units with counters.
+% A player may, during production, produce Supplement Counters, but only if the producing system/planet contains at least one actual unit of that type after the production is complete.
+% As stated, Supplement Counters are simply additional units of the indicated type, and therefore also must behave under all the same rules as the actual unit.
+% In other words, Fighter Supplement Counters must have sufficient Carrier/Space Dock/War Sun capacity in order to exist.
+% Ground Force Supplement Counters must be transported by a Carrier in order to move to another planet, etc.
+% Note that when Supplement Counters are transported by a Carrier or War Sun, at least one actual unit of that type must also be transported by that same Carrier/War Sun.
+% If a Supplement Counter is on system/planet without an actual unit of its type, it is immediately removed.
+% An easy way to manage your Supplement Counters is to always place them under an actual unit of their type in the area.
+% As long as a Supplement Counter is under an actual unit of its type, it will always conform to the rules.
+
+% \section{Command Counters}
+
+
+% At the start of the game, players are each provided with a total of 16 Command Counters. 
+% During the game, these counters will be either on a player's Race Sheet or with his reinforcements.
+
+% Whenever a player receives a Command Counter from his reinforcements, he must immediately place it on his Race Sheet in one of the three following areas:
+% \begin{itemize}
+% 	\item The Strategy Allocation Area
+% 	\item The Fleet Supply Area
+% 	\item The Command Pool Area
+% \end{itemize}
+
+% These three areas represent three distinctly different vital areas of managing your race.
+% Once a player places a Command Counter in one of these areas, he may not move it to a different area until the upcoming Status Phase.
+% Decisions on where to place and how to spend Command Counters are among the most important that a player will make during the game.
+% When a player spends a Command Counter, or uses a Command Counter to activate a system, he must remove the counter from the appropriate area of his Race Sheet and return it to his reinforcements. In detail, the effects and rules for each of the three areas are as follows:
+
+% \subsection{Fleet Supply Area} \index{fleet supply area}
+
+% The number of Command Counters in a player's Fleet Supply area dictates the maximum number of ships (not including Fighters) that a player may have in any given system on the board.
+% A player may never move units, build units, or otherwise acquire units in any system so that the number of ships herein (again, excluding Fighters) exceed the number of Command Counters in his Fleet Supply area.
+% If, for any reason, the number of ships in a system should exceed the number of Command Counters in a player's Fleet Supply, the owner of those ships must immediately remove enough ships from the system (by placing them back with his reinforcements) until the number of ships is again in compliance with the number of Command Counters in his Fleet Supply area.
+% When a player places a Command Counter in his Fleet Supply area, it is placed with the "Fleet" side up, to indicate that it is a part ofthe Fleet Supply area.
+% In this way, other players can easily identify your fleet limit from across the table, and it helps prevent your counters from mixing with the Command Counters in the two other areas.
+% As a player increases the number of Command Counters in his Fleet Supply area, he may increase the size of his fleets on the board correspondingly.
+% It is important to note that a player may have any number of active fleets on the board, as long as each fleet contains a number of ships that is equal to, or less, than its owner's Fleet Supply limit.
+% As noted, Fighter units do not count toward the Fleet Supply limit. 
+% A player may thus have any number of Fighter units in a given system, as long as he has the capacity to support them (see \namepageref{sec:fighter_unit}).
+
+% \subsection{Command Pool Area} \index{command pool area}
+% After a player decides to take a Tactical or Transfer Action during the Action Phase, he must take an available Command Counter from his Command Pool in order to activate a system on the board.
+% If a player has no Command Counters remaining in his Command Pool, he is not able to take Tactical or Transfer Actions.
+% In other words, the number of Command Counters in a player's Command Pool dictates the amount of activity he can initiate on the board.
+
+% \subsection{Strategy Allocation Area} \index{strategy allocation area}
+% Generally, Command Counters in the Strategy Allocation area are spent to execute the Secondary
+% Abilities of Strategy Cards.
+% Some races have special abilities and some Action Cards require their players to spend Command Counters from their Strategy Allocation area for other effects.
+
+% \section{Spending Resources and Influence}
+% Throughout a game of TI, you will need to spend resources and influence for many different purposes. 
+% Both resources and influence are provided by the planets under your control, and you will use their corresponding Planet Cards to keep track of your expenditures.
+
+% \subsection{Exhausting Planets} \index{exhausting planets}
+% Whenever you want to spend influence or resources you must exhaust one of your Planet Cards by turning it face down.
+% This provides you with the resources or influence of that planet. 
+% Each Planet Card (and the planets on the board themselves) shows the specific information on how many resources and how much influence is gained from exhausting that specific planet (see the diagram above). 
+% A face down Planet Card cannot be exhausted again until it is refreshed during the Status 
+% Phase (or by another effect). When a card is refreshed, it is simply returned to its face-up position. 
+% When you exhaust a planet for its resources or influence, it provides you with all of its resources or influence. 
+% You cannot use the resources or influence of a planet partially, nor can you save a portion for later.
+% Note that when exhausting a planet, it will provide you with either its resource value or its influence value, but not both. 
+% Before exhausting a planet, you must announce whether you are exhausting it for its resources or for its influence (in most cases it is clear for what purpose you are exhausting a planet).
+
+% \subsection{Paying Costs} \index{paying costs}
+% Whenever a player wishes to spend resources or influence, he simply announces the total amount of resources/influence that he wishes to spend, and then exhausts the number of Planet Cards with that (or greater) combined amount of resources/influence. 
+% In other words, when a player is producing units at a Space Dock during the Production step of the Activation Sequence, he may simply announce how many resources he is going to spend in total. 
+% Then he exhausts the appropriate number of planets and places the produced units on the board (see \nameref{sec:building_units} on page \pageref{sec:building_units}).
+% This means that you are not producing (and spending resources on) a single unit at a time, but rather purchasing the production with one lump sum. 
+% The same goes for spending influence. 
+% Any spare resources or influence provided by an exhausted Planet Card are lost.
+
+% \subsubsection{Special Note}
+% You do not have to exhaust a specific Planet Card to pay for the cost of production at that exact planet; any resources will do.
+
+% \todo{omitted an example for now}
+% \todo{example image}
+
+% \section{Action Cards}
+% Throughout the game, players will come into possession of Action Cards.
+% Action Cards should be kept hidden from other players. An Action Card can only be used given the specific circumstances (or phase) printed on each individual card.
+% \emph{A player may never have more than 7 Action Cards at any one time.}
+% If, after receiving additional cards, a player has more than 7 Action Cards in his hand, he must immediately choose and discard cards until he has 7.
+% If a player at 7 cards is about to draw additional cards, he should draw and discard one Action Card at a time.
+% A player may never play two identical Action Cards for the same situation and/or on the same entity during one round.
+
+% \subsubsection{Example}
+% A player cannot play two "Flank Speed" Action Cards on the same fleet in one Game round. The player may, however, play a “Flank Speed” on two different fleets in the same round.
+
+% \subsubsection{Trade Good icon}
+% Some Action Cards have a Trade Good icon printed on them. If not playing with the optional rule printed on the card, the card may be discarded instead of spending 1 Trade Good.
+
+% \subsection{How to Play an Action Card}
+% If a player wishes to play an Action Card, he must publicly announce that he wishes to play an Action Card.
+% Then other players, at that time, may announce that they also wish to play an Action Card.
+% After all players have been given the opportunity to announce that they are playing Action Cards, all the Action Cards are revealed and resolved in order of play.
+% If Action Cards are about to played at a time where players do not have Strategy Cards, then resolve them in clockwise order starting with the Speaker.
+
+% \subsection{Sabotage Action Card}\index{sabotage action card}
+% A player \emph{does not have to announce} the playing of a Sabotage card.
+% The Sabotage card is simply played immediately after an Action Card has been revealed, cancelling its effect.
+% Then both cards are discarded.
+
+% \subsection{"Play as an Action"} \index{play as an Action}
+% Some Action Cards read “Play: As an action.” 
+% This Action Card must played by its owner during the Action Phase instead of taking a regular action.
+
+% \section{Political Cards an the Galactic Council}
+% When the player who controls the Political Strategy Card executes his Strategic Action, a Political Card must be drawn and the Galactic Council convenes to debate and vote upon its agenda.
+
+% \subsection{Political Agenda} \index{political agenda} \index{agenda}
+% Every Political Card contains an agenda that requires a vote in the Galactic Council (i.e., the players).
+% As the first step of convening the Galactic Council, the active player reads aloud the drawn Political Card and makes it clear what kind of vote is about to be cast. T
+% here are two types of agenda votes:
+
+% \subsection{"Elect" Votes} \index{elect votes}
+% When a political agenda asks the Galactic Council to elect something or someone, each player may choose who or what to nominate (i.e., elect) when casting his vote.
+% That player's entire vote is now attributed towards that subject.
+% The subject with the highest number (not necessarily the majority) of the total votes is considered elected.
+% After this, follow the instructions on the Political Card.
+
+% \subsection{"For or Against" Votes} \index{for or against votes}
+% Most agendas will ask the Galactic Council to vote for or against a certain agenda.
+% In this type of vote, players indicate either “for” or “against” when casting their vote.
+% The majority of all votes cast will decide the outcome.
+
+% \subsection{Laws} \index{laws}
+% Some agendas are "Laws."
+% Laws represent permanent changes to the rules and/or flow of the game.
+% When a Law is voted "for," first enact any effects of the "for" result and then place the Political Card face up in the common play area.
+% The effects of this card are now permanent.
+% If voted "against," resolve any effects that an "against" result may have and then discard the card.
+
+% Although the council might have adopted a Law earlier in the game, the balance of power can later have shifted, and old Laws soon become unpopular.
+% If this happens, how can the council reverse the old Law?
+% Among the Political Cards, there are certain agendas that allow older Laws to be either re-evaluated or discarded.
+% Note that these cards are few and that most enacted Laws are in the game to stay, so be careful how you vote.
+
+% \subsection{Voting in the Galactic Council} \index{voting}
+% After the active player has read the agenda out loud, the Galactic Council must resolve the agenda in the following way:
+
+% Players first debate, threaten, lure, or convince each other to vote in their favour.
+% Trade Good Counters may be used as "bribes" but no promises or agreements in TI are binding (even after receiving a bribe or payoff).
+
+% Players then vote upon the agenda.
+% Voting is done clockwise one player at a time, starting with the player to the left of the Speaker (thus the Speaker will always cast the last vote).
+% When voting, a player has as many votes as the total combined influence value of all his unexhausted planets (and a minimum of 1 vote).
+
+% \begin{itemize}
+% 	\item When voting, a player must cast all his votes or none.
+% 	\item Votes cannot be split.
+% 	\item Voting does not cause your Planet Cards to exhaust.
+% 	\item Trade Good counters cannot be used to gain additional votes.	
+% \end{itemize}
+
+% The Galactic Council is meant to be a fun, active engagement in which players forge alliances, use their political prowess, engage in sabrerattling, and "act their race."
+% As powerful agendas are presented to the council, weaker players can seek to hurt strong neighbours politically via the enactment of damaging Laws or other agendas.
+
+% \subsection{Abstaining and Tie Votes} \index{abstaining} \index{tie votes}
+% A player may always choose to abstain from voting during any agenda.
+% If so, his votes are simply not counted for purposes of resolving the agenda (including determining a majority).
+% If there is a tie vote, even a tie of "0" (in which all players have abstained), the player holding the Speaker Token breaks the tie.
+
+% \subsubsection{Rules and Cards}
+% If the effect of a card seems to contradict the rules of the game, the card text is always correct.
+
+% \section{Technology Advances} \index{technology advances}
+% Before the game begins, each player is provided with an identical deck of 24 Technology advances, and each player starts the game with a few “Starting Technology” advances. 
+% When a player has successfully acquired (or received at the start of the game) a Technology advance, he takes the respective Technology Card and places it face-up before him in his play area. 
+% In this way, players will slowly accumulate Technology Cards, each providing a helpful advantage described on the card itself.
+
+% Technology Cards are normally acquired during the resolution of the Technology Strategy Card, but can also be acquired via certain Action and Political Cards.
+% \emph{Players may not give each other Technology advances.}
+
+% There are four different technology areas, each attributed the following colour:
 
 % \begin{description}
-% 	\item[DS9:] It is a program that visualizes astronomy images in FITS format (don't worry if you recognize this format, it will be explained later), where you can easily manipulate them, read their headers, compare, look at regions, see their characteristics, make graphs, even movies. Well, depending on what you need to use later you will be finding all the functions, the best way is to click everywhere and find out what happens, also you can ask to your astronomy colleagues they will tell you all the perks, or if you like learning by yourself or you need someting specific check the documentation webpage. It is faily easy to install, just follow the instructions.
-%     	\begin{description}
-%         	\item[Download: ]\url{http://ds9.si.edu/site/Download.html}
-%             \item[Documentation: ]\url{http://ds9.si.edu/site/Documentation.html}
-%         \end{description}
-%         The picture below shows (Fig.\ref{fig:screen}something cool you can do in DS9.
-%         \begin{figure}[h]
-%         	\centering
-%     \includegraphics[width=0.87\textwidth]{Screenshot.png}
-%     \caption{This is an RGB picure made from 3 independent FITS files, with a zscale and a region file overlaid from NED database, if you would like to learn more about this, or reproduce it, it is all explained in this webpage: \url{https://github.com/LaurethTeX/Clustering/blob/master/NEDtoREGION-FILE/KnownRegions.md}}
-%     \label{fig:screen}
-%         \end{figure}
-        
-%     \item[Python and a user interface: ]The most \emph{limitless} and user fiendly way to develop programs in Astronomy is using Python, there are many packages, modules, functions now available to help you in almost anything. Me, as an undergrad engineer I'm used to program on an user interface and not directly in a terminal. So, here I will explain you my own way of doing things.
-    
-%     I make my programs on the Canopy editor, it shows when and where you have programing error and warnings, and the interface is easy to learn, now to run, I open a terminal, go to the directory where my program is, type \verb|ipython| wait and then type \verb|run| \verb|myProgram.py|, and wait for the result.
-    
-%     Now there are a lot of fancier ways to work with \emph{Python}, you can program and test directly using \emph{IPython Notebook} on a web broswer or you can just go for the terminal, use \emph{nano} or \emph{vi} or the text editor you like and then run it by typing \verb|python| \verb|myProgram.py|. At this point is up to you, but hey here are some links to start and the packages/modules you should install.
-    
-%     \begin{description}
-%     	\item[Interfaces or Development environments]\hfill
-%         	\begin{itemize}
-%             	\item PyCharm, it a development environment, just like CodeBlocks or NetBeans \url{http://www.jetbrains.com/pycharm/}
-%                 \item Spyder, actually this is the interface that comes with the Python discritution Anaconda, you will get the Python districution and the intrerface. \url{https://store.continuum.io/cshop/anaconda/}
-%                 \item Canopy, this is the one I mentioned before, it super easy to use and you can install packages with one click. \url{https://www.enthought.com/products/canopy/}
-%             \end{itemize}
-%         \item[Modules]\hfill
-%         \\
-%         In Python, modules are like the libraries in C, therefore, to use math, astronomy and computer science tools you need to install them. To learn whether you already have a module installed or not, type on \emph{iPython} \verb|import andreaModule|, if the output result is something like \verb|ImportError: No module named andreaModule|, you definitely don't have it installed. 
-        
-%         The strategy here to install packages it fairly easy, find their website, go to the download section and follow the instructions, almost all the packages are available on the Python Packaing Index and may be installed by running:
-%         \begin{verbatim}
-%         	pip install pyfits
-%         \end{verbatim}
-%         To learn how to use them check the documentation page, user manuals or their API's, if you have experience on object oriented programing it will be like running a new bike and if you don't, don't worry too much, Python was designed to be easy to program, just learn the rules of the game.
-%         	\begin{itemize}
-%             	\item Astropy, this package is the \emph{must have} of every astronomer, contains tools to handle coordinate systems, units, convolution.. well is better if you take a look at the webpage. \url{http://www.astropy.org/}
-%                 \item Numpy, this package contains the math magic functions, linear algebra tools and the array management variables, make sure you learn all about \emph{Numpy arrays} you will work with them all the time. \url{http://www.numpy.org/}
-%                 \item SciPy, well this package is the base of all scikit modules which contain the functions you will use in image processing and machine learning. \url{http://www.scipy.org/}
-%                 	\begin{itemize}
-%                     	\item Scikit Image, contains image processing tools, it is the \emph{OpenCV} for \emph{Python} \url{http://scikit-image.org/}
-%                         \item Scikit Learn, contains data mining algorithms, pretty much contains everything that you will ever need. \url{http://scikit-learn.org/}
-%                     \end{itemize}
-%                 \item Matplotlib, this package is probably one of the most powerful tools visualize data, you can draw almost anything you want and exacly how you want it. An example of that are the images of the AstroML book, you can access to the image library code and learn how they are made, this is the website \url{http://www.astroml.org/book_figures/index.html}.\footnote{Statistics, Data Mining, and Machine Learning in Astronomy book, it was mentioned before}. You can download the package here \url{http://matplotlib.org/}.
-%                 \item PyFITS, in this package you will find tools to manipulate FITS files, create new ones, create image cubes, tables, and do all kinds of things with their headers. Certainly this package is more than useful. \url{http://www.stsci.edu/institute/software_hardware/pyfits}
-%             \end{itemize}
-%     \end{description}
-%     In the path of researching I'm certain you will find more and new packages and by them you will be prepared to install anything.
-%     \item[Montage: ]This is a toolkit for assembling astronomical images into mosaics, but it has more functions that you may need in the future to prepare your data before processing it. There are two ways of installing and I would say that is better to have them both. One is to install the toolkit and anytime you need it, you run the commands on the terminal, the other one is to install a \emph{Python} module and use it just like any other module.
-%     To install montage for terminal, download the lastest version in this website \url{http://montage.ipac.caltech.edu/docs/download.html}, \textbf{read the README file} or go to this website \url{http://montage.ipac.caltech.edu/docs/build.html} and follow the steps, now if you don't have any problem installing it, you can try testing it with an example program found on this website \url{http://montage.ipac.caltech.edu/docs/pleiades_tutorial.html}, in case you are having trouble and your computer is a MAC, instead of doing step five (\emph{If you want to be able to run the Montage executables from any directory}), try this:
-    
-%     \begin{enumerate}
-%     	\item Open a file called \verb|.profile| located in your user folder. (e.g. \verb|/Users/Laureth|)
-%         	\begin{verbatim}
-%             	$ vi .profile
-%             \end{verbatim}
-%          \item Include in the file the following
-%            \begin{verbatim}
-%            	export PATH=/Applications/Montage_v3.3/bin:$PATH
-%            \end{verbatim}
-%            In this link (\url{https://github.com/LaurethTeX/Clustering/blob/master/Tools.md#the-profile-file}) you will find an example of how this file should look. After you modify it, make sure that you save it and type in \verb|/Users/Laureth|,
-%            \begin{verbatim}
-%            	$ source .profile
-%            \end{verbatim}
-%            Then try Testing the \emph{Montage} commands, and I'm sure that it will magically work, just remember that anytime you use any command, type \verb|source .profile|.\\
-            
-%     \end{enumerate}
-    
-    
-    
-%       Now the other way to install, implies only to install a \emph{Python} module but this module contains less functions that the terminal application, in any case check the website \url{http://www.astropy.org/montage-wrapper/}, there you will find all the documentation you may need and the instructions to install it (\emph{Spoilers} \verb|pip install montage-wrapper| ).\\
+% 	\item[Red] Warfare Technology
+% 	\item[Green] Biotechnology
+% 	\item[Blue] Propulsion Technology
+% 	\item[Yellow] General Technology
 % \end{description}
 
-% Any questions you may have and how to install, here is my GitHub page for software tools \url{https://github.com/LaurethTeX/Clustering/blob/master/Tools.md}
+% \subsection{Acquiring a Technology Advance}
+% In general Technology advances are acquired when the Technology Strategy Card is executed during the Action Phase.
+% The active player receives a free Technology advance, and other players may pay 8 resources to acquire one Technology advance.
+% Most Technology advances (but not all) have prerequisite technologies. 
+% Before a Technology advance can be acquired, a player must already have obtained all prerequisite technologies printed on the card.
 
-% %----------------------------------------------------------------------------------------
-% %	CHAPTER 3
-% %----------------------------------------------------------------------------------------
+% A player is not allowed to acquire a technology (via Action Cards, or otherwise) if he does not already have the prerequisite technologies face up in his play area.
 
-% \chapterimage{boat.png}
-% \chapter{Understand your data}
+% \subsection{Planetary Technology Specialities} 
+% \index{planetary technology specialities}
+% \index{technology specialities}
 
-% Before continuing, first and most importantly you must select the \emph{raw} data you are going to process and later after you aquire experience with an specific dataset the idea is to expand the algorithms to any kind of dataset. The important things are to learn how to input the data correctly, establish the right \emph{learning paramenters} in the selected algorithm and find the best way to visualize your results and interpret them correctly.
+% Some planets have a technology specialty (a printed technology symbol by the planet itself and on the Planet Card).
+% Technology specialties represent a certain local knowledge or a natural resource important to a specific area of science.
+% The presence of a technology specialty gives the owner of the planet the ability to purchase a Technology Card (of the specific type: red, green, or blue) for 1 less than its normal cost when executing the secondary ability of the Technology Strategy Card.
+% If a player controls multiple planets with technology specialties of the same colour/type, the cost to acquire that technology type is lowered by 1 for each such planet.
 
-% Now let's start with basic concepts that vary from an engineering to an astronomer point of view.
-% \section{What is an image?}
-% 	As you may know, an image is a matrix of numbers that cointains the specific brightness level that corresponds to a given pixel. And from there the concepts evolves and adds channels of colour and depth. But for now, let's just think about monochromatic images (only one channel). In Astronomy, images are usually considered sets of scientific data, observations, that contain information about an speficic target in the sky seen throught an specific filter and the levels of brightness correspond to the behaviour of the optical sensor (CCD camera) in relation with the number of electrons that hit a particular pixel through an specific waveband. Something else to consider is that the sky is not flat with this I mean that the celestial vault is like a sphere surrounding us therefore cartesian coorditanes are not the paramenters used to identify points in space, there is another system called WCS (World Coordinate System) hence a conversion between pixels and WCS coordinates exists. As you are realizing now just one image can contain tons of information related to it, now imagine that multiplied for terabytes and terabytes of stars, galaxies, planets, nebulae or any object in space. Fortunately in astronomy this is solved using an image format that cointains the image and its own information.
-% 	\subsection{FITS files}
-%     	This format is the standard data format used in astronomy, can contain one image, multiple images, tables and header keywords providing descriptive information about the data. The way it works is that this format can contain a text file with keywords that comprise the information about the observation and a multidimensional array that could be a table, or an image, or an array of images (data cube). This files can be managed in diffetent ways, with an image preview use DS9, for handing the data in a program use the \emph{Python} package \emph{PyFITS}.
-        
-% 	\subsection{WFC3 ERS M83 Data Products}
-%     The selected dataset to test the data mining libraries I found is a series of observations of M83 at 9 different wavelengths, the original images can be found in this webpage, \url{http://archive.stsci.edu/prepds/wfc3ers/m83datalist.html}, the specific information about them can be found in Table \ref{tab:uno}. This particular images were observed through HST with the WFC3/UVIS camera.
-    
-% \begin{table}[h]
-%   \centering
-%   \begin{tabular}{ c c c c c c }
-%     \hline\hline
-%     Filter / Config. & Waveband / Central $\lambda$/ Line & Obs. Date & Comment \\
-%     \hline
-%     F225W & UV filter / 235.9 nm & 26 Aug 2009 &  UV wide\\
-    
-%     F336W & UV filter / 335.5 nm & 26 Aug 2009 & Str$\ddot{o}$mgren $u$\\
-    
-%     F373N & Narrow-Band Filter / 373.0 nm & 19 Aug 2009 & Includes \textsc{[OII]}\\
-    
-%     F438W & Wide-Band Filter / 432.5 nm & 26 Aug 2009 & $B$, Johnson-Cousins set\\
-    
-%     F487N & Narrow-Band Filter / 487.1 nm & 25 Aug 2009 & Includes H$\beta$\\
-    
-%     F502N & Narrow-Band Filter / 501.0 nm & 26 Aug 2009 & Includes \textsc{[O III]}\\
-    
-%     F657N & Narrow-Band Filter / 656.7 nm & 25 Aug 2009 & Includes H$\alpha$+\textsc{[NII]}\\
-    
-%     F673N & Narrow-Band Filter / 676.6 nm & 20 Aug 2009 & Includes \textsc{[SII]}\\
-    
-%     F814W & Wide-Band Filter / 802.4 nm & 26 Aug 2009 & $I$, Johnson-Cousins set\\
-%     \hline
-%   \end{tabular}
-%   \caption{Summary of Observations}
-%   \label{tab:uno}
-% \end{table}
-% %Poner aqui la tabla con los datos de acada filtro
-% %No olvidar poner en GitHub el programa de como hacer el cube y tammbien el de reproject cube con montrage wrapper
+% Technology specialty discounts do not apply if the contributing Planet Card(s) is exhausted. 
+% (It is not necessary to exhaust a planet with the technology specialty in order to receive the discount, nor is it necessary to exhaust that specific planet to buy the Technology advance).
 
-% \section{Preprocessing your data}
-% This section is where you prepare your data to be processed, you have to make sure that all your images have the same grid size, same spatial resolution, less possible quantity of outliers abd noise and same coordinate system. Now, what are those things? Same grid size means that your images must have the same pixel size, in the dataset we are processing we don't have to worry about this, the pixel size is 0.0396 arcsec/pixel. Now, spatial resoultion, each image has it's own spatial resolution depending on the filter that was used to get the observation, the number that you will be looking for is the FWHM that describes the PSF of every image. When you have all the FWHM for all the images you should choose the largest which corresponds to the poorest spatial resolution and create a convolution kernel with \emph{Tiny Tim} or use a gaussian kernel calculated with \emph{Astropy} and convolve all the images with that kernel. This exactly what I did, if you look at image \ref{img:conv}, you will see the before and after convolution. In table \ref{tab:dos} you can see how I chose the number for the FWHM.
+% \subsection{The Yellow Technology Specialty} 
+% \index{yellow technology specialty}
+% The yellow (general) Technology specialty works exactly like the red, green, and blue Technology specialties except that the yellow Technology specialty does not count for the purpose of fulfilling objectives.
+
+% \section{Trade Goods}\label{sec:trade_goods}
+% \index{trade goods} 
+
+% \subsection{Trade Goods Counters}
+% Players may spend Trade Good counters from their Trade Goods area \emph{as a substitute for spending either one resource or one influence}.
+% In this way, a player can pay for a Dreadnought unit by spending 5 Trade Goods from his Trade Goods area, or by exhausting Planet Cards for 3 resources, and paying the remaining 2 resources with Trade Goods (or any combination thereof).
+% When a player spends a Trade Good, he simply moves it from his Trade Goods area to the common play area.
+% Players are allowed to give other players Trade Goods from their Race Sheet at any time.
+% This makes the Trade Goods counter a flexible currency with which to bribe, pay, or assist other players economically.
+
+% \subsection{Receiving Trade Goods} \index{receiving trade goods}
+% A player receives Trade Goods by simply taking required number of Trade Goods from the common play area and placing them on the Trade Goods area of his Race Sheet.
+
+% \subsection{Running out of Trade Goods}
+% There are exactly 88 Trade Goods in the game (40 + 12 in SE + 36 in SotT) if the Trade supply in the common play area is empty, then \emph{players cannot receive additional Trade Goods} until a player spends some and returns them to the common play area once more. 
+% Since there is a limit to the total number of Trade Goods, it is important to adhere to the player order of executing the secondary ability of the Trade Strategy Card, which is always done in clockwise order from the active player.
+% \todo{recheck TG count}
+
+% \section{Trade Contracts and Trade Agreements}
+% In TI, trading is an important avenue for players to gain additional resources and influence. 
+% Trade can be used as important political leverage against hostile players or to help seal an important alliance.
+% At the beginning of the game, each race is provided with two Trade Cards, each with a numerical trade value printed on the "trade agreement" side of the card (you may notice that some races have Trade Cards of differing trade values).
+% At the beginning of the game, players should place these cards with the “Trade Contract“ side up in their playing area. 
+% This side has no trade value, as players derive no value from their own Trade Cards.
+
+% \subsubsection{Note}
+% Information below about Trade Strategy Card only applies to strategy card from the Base game.
+% Further reading: \namepageref{sec:trade_strategy}.
+
+% \subsection{Opening Trade Agreements} \index{opening trade agreements}
+% When the primary ability of the Trade Strategy Card is being resolved during the Action Phase, the active player may allow players (himself included) to forge trade agreements.
+% A trade agreement is initiated between two players who agree to trade with each other.
+% After agreeing to trade, each of the two players must give the partner one of their own Trade Cards.
+% Upon receiving another player’s Trade Card, a player should place it before him with the trade agreement side face up.
+% Only one Trade Card for each player may be exchanged, not more.
+% Since every race has only two Trade Cards, each player may only have two active trade agreements at any one time.
+% Before a trade agreement can be completed, the agreement must first be approved by the active player. 
+% If approved (and that may take some bribes to the active player), the players may exchange Trade cards.
+
+% \emph{Two players may only make one trade agreement with each other.}
+% Thus, for a player to utilize both of his Trade Cards, he must make trade agreements with two different opponents. 
+% If able, a player may initiate both of his trade agreements during the same execution of a Trade Strategy Card.
+% It is important to note that since each player only has two Trade Cards, he cannot make more than two trade agreements.
+
+% While executing the primary ability of the Trade Strategy Card, the first player receives Trade Goods for his trade agreements (the total trade value of any trade agreements in his play area) and 3 extra trade goods. 
+% After the active player has completed the primary ability, the other players, clockwise from the active player, may execute the secondary ability of the Trade Strategy Card to receive Trade Goods for their trade agreements.
+
+% Note that players are not allowed to collect trade income from trade agreements formed during the same action. It is not possible for a player to make a trade agreement during the primary ability of the Trade Strategy Card, and then immediately collect trade income from the new trade agreement by executing the secondary ability.
+
+% \subsection{Breaking Trade Agreements}
+% Any player involved in a trade agreement may unilaterally break the agreement during the Status Phase.
+% Such a player simply announces that he is ending the agreement and immediately returns the Trade Card to its owner and retrieves his own Trade Card from the former trading partner (a player’s own Trade Cards are always returned with the “Trade Contract” side face up, as they provide no trade value for their owner).
+% It is not possible for a player to automatically break a trade agreement with the Hacan race, as per the Hacan's special ability.
+
+% If two trading players become involved in open war against each other (by one player initiating either a Space Battle or Invasion Combat against the other), a trade agreement between the two players is automatically broken (and the Trade Cards returned to their owners).
+% The two players may later open another trade agreement, but this will again be broken if another Space Battle or Invasion Combat occurs between them. 
+% Trade agreements with the Hacan player are broken in the event of open war between the Hacan and its trading partner.
+
+% Note that only Space Battles and Invasion Combat will automatically break a trade agreement between two players.
+% Playing Action Cards or taking shots with a PDS, etc., does not cause an automatic break.
+% \emph{Invading a planet that contains only an enemy Control Marker is still considered Invasion Combat for purposes of cancelling trade agreements}.
+
+% \subsection{Power of the Merchants Guild}
+% When executing the primary ability of the Trade Strategy, the active player may choose to exercise his control of the Merchant’s guild in a destructive way, rather than facilitating the wealth of other races.
+% As described in option “b” of the Trade Strategy Card, the active player, instead of receiving Trade Goods and opening trade negotiations, may instead choose to cancel every trade agreement in play.
+% If the active player chooses this option, all Trade Cards (including those of the active player and the Hacan) are returned to their owners.
+
+% \subsubsection{Definition of an “Empty“ System} \index{empty system}
+% The TI rules and cards will sometimes refer to an “empty” system.
+% An empty system is a system completely free of units, including units belonging to the active player.
+% In other words, an empty system is one that is free from ship, Ground Force, PDS, or Space Dock units.
+% The system may, however, contain planets, Control Markers, and Command Counters. 
+% Special Systems are not considered empty systems.
+
+% \section{Objective Cards}
+% The Objective Cards represent the primary way for players to receive victory points.
+% Each Objective Card (both Secret and Public) contains a requirement and a victory point award for meeting that requirement.
+% The Public Objective Cards are slowly revealed as the Imperial Strategy Card is resolved during the Action Phase.
+% During the first step of the Status Phase, players may qualify for the requirements of one revealed Public Objective Card in order to receive the corresponding victory points.
+% Note that a player cannot gain victory points from a Public Objective Card that is not yet revealed.
+
+% Some Objective Cards state “Now I…”.
+% This requires a player to actually fulfil the requirement during the first step of the Status Phase.
+% For example, one Objective Card reads “I now spend 20 Resources (2 victory points).”
+% In order for a player to receive these two victory points, he must have enough Trade Goods and unexhausted planets to spend 20 resources during the first step of the Status Phase.
+% A player may only receive victory points from a specific revealed Objective Card once per game.
+% After collecting victory points from an Objective Card, a player should, to serve as a reminder, place one of his Control Markers on the card.
+
+% \section{Secret Objective Cards}
+% At the beginning of the game, each player receives a Secret Objective Card.
+% A player is not allowed to show other players his Secret Objective Card until he is able to meet its objectives during the first step of the Status Phase.
+% A player who reveals his Secret Objective Card without being able to meet its requirements loses his Secret Objective Card, which is placed back in the box. 
+% Such a player will not be able to receive victory points from a Secret Objective for the duration of the game.
+% During the Status Phase, a player may qualify for one Public Objective Card and/or his Secret Objective Card.
+% A player cannot qualify for more than one Public Objective Cards in one round.
+
+% \section{Race Sheet}
+% The Race Sheet provides a wealth of useful information and is used to manage a player’s active Command Counters.
+% Here is a brief explanation of the player Race Sheet:
+% \begin{enumerate}
+% 	\item \textbf{Race Title and Symbol.}
+% 	The symbol and title of the represented race.
+	
+% 	\item \textbf{Starting Units and Special Abilities.}
+% 	The starting units/technologies, and the special abilities of the race.
+	
+% 	\item \textbf{Phase and Sequence Tables.}
+% 	A detailed overview of the important phases and sequences of the game round.
+	
+% 	\item \textbf{Unit Data.}
+% 	A detailed chart with the costs, combat value, movement rating, and special abilities of each unit type.
+	
+% 	\item \textbf{The Strategy Allocation Area.}
+% 	Command Counters herein can be spent to execute the secondary abilities of Strategy cards (and a few other special functions).
+	
+% 	\item \textbf{The Fleet Supply.}
+% 	Command Counters herein are flipped to their “Fleet” side, so that they do not mix with the other Command Counters on the Race Sheet.
+% 	The number of Command Counters herein determines the allowable size of a player’s fleets.
+	
+% 	\item \textbf{The Command Pool.}
+% 	A player must spend Command Counters from this area when activating systems on the game board (when taking a Tactical or Transfer Action).
+	
+% 	\item \textbf{The Trade Goods Area.}
+% 	When a player receives a Trade Good counter, it is placed in this area.
+% 	A player may give Trade Goods to other players at any time, or use Trade Good as a substitute for spending either one resource or one influence.
+% \end{enumerate}
 
 % \begin{figure}[h]
-% 	\centering
-%     \includegraphics[width=0.87\textwidth]{conv.jpg}
-%     \caption{In this image you can observe how an observation looks, before and after convolution, this particular image corresponds to the B band filter and was convolved to a 0.083 arcsec FWHM}
-%     \label{img:conv}
+% 	\includegraphics[width=\textwidth]{race_sheet}
 % \end{figure}
 
-% \begin{table}[h]
-%   \centering
-%     \begin{tabular}{ c c c }
-%     \hline\hline
-    
-%     Filter / Config. & Central $\lambda$ & FWHM (arcsec)\\
-%     \hline
-    
-%     F225W & 235.9 nm & $\sim$0.083\\
-    
-%     F336W & 335.5 nm & $\sim$0.075\\
-    
-%     F373N & 373.0 nm & $\sim$0.070\\
-    
-%     F438W & 432.5 nm & $\sim$0.070\\
-    
-%     F487N & 487.1 nm & $\sim$0.067\\
-    
-%     F502N & 501.0 nm & $\sim$0.067\\
-    
-%     F657N & 656.7 nm & $\sim$0.070\\
-    
-%     F673N & 676.6 nm & $\sim$0.070\\
-    
-%     F814W & 802.4 nm & $\sim$0.074\\
-    
-%     \hline
-%   \end{tabular}
-%   \caption{WFC3/UVIS PSF FWHM informations for the selected dataset, as you can see the largest number here is 0.083 wich means the poorest spatial resolution, this is the number used to calculate the convolution kernel, in order to precess them all images must have the same spatial resolution.}
-%   \label{tab:dos}
-% \end{table}
 
-% After convoling all the picures, I started to do some tests, but I realized that maybe around 30\% of the images was missing information and/or noise and the results I was getting were mislead by the outliers. In clustering algorithms we must help the algorithm, make sure that what we are inputing is something that can be clustered, although some of them are \emph{shielded} against outliers, making our data more accesible and easy for the neural networks to interpret will help you to get better results, as you can see in image \ref{img:dos} (open one and explore it in DS9) there is missing information and noise. In order to correct this I decided to go with the easiest way I could think of, just cut the image. And I did selected a processable area excluding all the missing information and noisy areas.
 
-% \begin{figure}[h]
-% 	\centering
-%     \includegraphics[width=0.47\textwidth]{uno.jpg}
-%     \caption{Look at the image, it is composed of two mosaics, therefore, there are some regions with missing data, now look at the borders of each mosaic there is noise near the edges, this is data that we don't want messing with our clustering algorithm and can be classifed as outliers, it is very important to reduce them as much as possbile so the output clusters can be correclty classified and correspond to the information that we are looking for}
-%     \label{img:dos}
-% \end{figure}
 
-% The next step was to build the datacube, at this point you can decide if you want to process your images indendently or all of them. The ideal here is to input all of them in a datacube, so the output cluters relate information from all the wavelenghts and the regions covered by them can be interpreted more easily. Now if you choose to create an imagecube (just append the image arrays in one FITS file) it is posible that youy images have a different conversion between their world coordinate system to pixel, so have to make sure all of your images are projected with only one conversion, this mean that you have to reproject them to a common WCS.
+% \chapter{Rules for Units}
+% Following is a detailed breakdown of the characteristics and rules for the 9 different unit types in TI that players have at their disposal.
 
-% Well, what I wrote before it is a brief summary of what I did, but I'm sure that you can find a better way to do your own data pre-processing but here are some things that you should consider:
+% \section{Space Dock}
+% \begin{wrapfigure}{L}{0.3\textwidth}
+% 	\vspace*{-10pt}
+% 	\includegraphics[scale=0.8]{/units/dock}
+% 	\vspace*{-10pt}
+% \end{wrapfigure}
+
+% \unitdesc{3}{4}
+
+% The Space Dock unit represents a military industrial complex, shipyard, and recruiting station in close orbit of a specific planet. 
+% In order to build units (other than another Space Dock) in a given system or on a specific planet, a Space Dock must be present there.
+
+% \subsection{Building a new Space Dock}
+% In order to build a new Space Dock on a planet, the following requirements must be met:
+% \begin{enumerate}
+% 	\item The system (that contains the planet on which you want to build the Space Dock) has just been activated, and is currently at the “Production” step of the Activation or Transfer Sequence.
+% 	\item The active player must have controlled the planet for the entire current round. Thus, it is not possible to build a Space Dock on a planet that has just been acquired during the current round.
+% 	\item The planet does not already contain a Space Dock (only one Space Dock per planet is allowed).
+% 	\item The system does not contain any enemy ships.
+% \end{enumerate}
+
+% If these requirements are met, the activating player may take an available Space Dock from his reinforcements, spend 4 resources, and place the Space Dock on the chosen planet. 
+% Next round the Space Dock may begin producing units for its owner. 
+% It is important to remember that a Space Dock is tied to a specific planet and is not considered to be “in space” and so does not participate in Space Battle, nor can it be attacked directly by enemy ships.
+
+% \subsection{Building Units at a Space Dock} \label{sec:building_units}
+% In order to produce new units (other than a new Space Dock), players must activate (via a Tactical or Transfer Action) a system that contains at least one friendly Space Dock. 
+% As the last step in resolving the activation of the system, the activating player may spend resources to build units at the Space Dock, governed by the following rules:
+% \begin{itemize}
+% 	\item A Space Dock may only build a number of units (regardless of type) equal to the resource value of its planet plus two. 
+% 	This means that a Space Dock located on a planet with a resource value of 3 may produce up to 5 different units (3 for the resource value of the planet, plus 2 for the Space Dock itself). 
+% 	This restriction is for the number of units, regardless of their total resource cost. 
+% 	Thus the above planet with a production limit of 5 may produce 5 Dreadnoughts or 5 Fighters (or any combination of those, and other, units).
+	
+% 	\item New spaceships (Fighters, Cruisers, Carriers, Destroyers, Dreadnoughts, and War Suns), when built, are placed directly (and always exist) in space. 
+% 	Each system represents one area of space. Unlike Ground Forces, PDS, and the Space Dock itself, spaceships are never considered to be on, attached to, or affiliated with a planet in their current system.
+	
+% 	\item Ground Force and PDS units are always built and placed on the planet containing the Space Dock.
+	
+% 	\item Note that when purchasing either Fighter or Ground Force units, 1 resource provides two units. 
+% 	If, due to the production limit of a Space Dock, a player wishes to only purchase 1 Ground Force or Fighter unit, the single unit still costs 1 resource. 
+% 	A player may not “mix and match“ when purchasing Ground Forces and Fighters, such as purchasing one of each for only one resource.
+% \end{itemize}
+
+% \subsubsection{Note}
+% Ground Force and PDS units cannot move to another planet (including other planets in the same system) unless transported by a Carrier or War Sun.
+
+% Other Rules for Space Docks:
+% \begin{itemize}
+% 	\item 
+% 	A Space Dock has the capacity to support 3 Fighter units in its system (see later).
+	
+% 	\item 
+% 	If a system contains at least one enemy spaceship, all friendly Space Docks in that system are considered under blockade, and may not produce spaceship units while the enemy units are in the system. 
+% 	A Space Dock under blockade may still build Ground Forces and PDS on its planet during the Production step of the Activation Sequence.
+% \end{itemize}
+
+% \subsubsection{Strategy Tip}
+% Cruisers and Destroyers are especially useful for swooping in from afar to blockade your Space Docks. 
+% Be cautious if fast enemy ships are within range, and try not to rely on just one Space Dock for your production, especially later in the game.
+
+% \section{Ground Forces}
+% \begin{wrapfigure}{L}{0.3\textwidth}
+% 	\vspace*{-10pt}
+% 	\includegraphics[scale=0.8]{/units/ground_force}
+% 	\vspace*{-10pt}
+% \end{wrapfigure}
+
+% \unitdesc{12 (plus supplement counters)}{1 (produces two Ground Force units)}
+
+% The Ground Force unit represents a player's military and occupational forces. 
+% It is an essential unit necessary to take over neutral planets, invade enemy planets, or defend your own planets against enemy invasion. 
+% Ground Forces are governed by the following rules:
+
+% Ground Forces, when produced, are placed on the planet of the producing Space Dock. 
+% Ground Forces are primarily transported around the galaxy by Carrier units (although the War Sun unit, as well as certain Technology advancements, can facilitate other means of Ground Force transportation). 
+% A Ground Force unit is never considered to be in “space“, as it is always either on a planet or being transported inside a Carrier/War Sun.
+
+% A Carrier unit may, at any point during its movement, pick up a Ground Force unit located on a planet in the same system as the moving Carrier (see more details under the Carrier unit). 
+% \emph{Exception: A Carrier, when moving through an already activated system, may not pick up Ground Forces there.}
+
+% During the Planetary Landings step of the Activation Sequence, Ground Forces on a Carrier unit may move directly onto any friendly, hostile, or neutral planet in the same system.
+
+% \subsubsection{Controlling Planets}
+% To take control of a planet, a player must always have successfully landed at least one friendly Ground Force on that planet. 
+% Unless the planet is later lost to another player by invasion, a planet will remain under a player's control for the remainder of the game.
+% If the last of a player's Ground Force units leaves a planet, the player simply places one of his Control Markers on the planet to indicate his ownership.
+
+% \section{Carrier Unit}
+% \begin{wrapfigure}{L}{0.4\textwidth}
+% 	\vspace*{-10pt}
+% 	\includegraphics[scale=0.6]{/units/carrier}
+% \end{wrapfigure}
+
+% \unitdesc{4}{3}
+
+% The Carrier unit is the primary vehicle for expanding territory by transporting friendly Ground Forces and PDS units from system to system.
+% In addition to the mundane task of transportation, the Carrier can also be a formidable weapon as it may bring swarms of deadly and inexpensive Fighter units to bear against your enemies.
+% A Carrier unit has a capacity of 6.
+% You may think of capacity as open “slots,” for which each slot may hold a Ground Force, PDS, or Fighter unit. 
+% Unlike the Space Dock, which has a special capacity that will support 3 Fighter units (and no Ground Forces or PDS), the Carrier will hold units of all three types (Fighters, Ground Forces, and PDS). 
+% A Carrier is not restricted to carrying units of only one kind, but can carry any mix of the three unit types.
+
+% \begin{itemize}
+% 	\item 
+% 	A Carrier can never carry more than 6 units, so be careful to keep track of how full your Carriers are. 
+% 	Excess units on a Carrier must be immediately destroyed (chosen by the Carrier’s owner).
+% 	\item 
+% 	If a Carrier is destroyed, any Ground Force and PDS units aboard the Carrier are automatically destroyed. 
+% 	Fighter units can survive if the current system has enough capacity to support the Fighters (supplied by either another Carrier, War Sun, or Space Dock).
+% 	\item
+% 	Note that Ground Forces do not participate in any battle while being transported by a Carrier unit. 
+% 	Likewise, while aboard a Carrier, PDS units do not function.
+% 	Fighters, on the other hand, are not considered “on board“ the Carrier, and may participate in any Space Battle in the system.
+% 	\item
+% 	A Carrier can only “unload” its Ground Forces and PDS onto a planet, or onto another Carrier, during the Planetary Landings step of the Activation Sequence.
+% 	Yet, it may pick up units from any system in which it started its movement, passed through while moving, or ended its movement.
+% 	To this, there are the following exceptions:
 % 	\begin{itemize}
-%     	\item Create a methond as general as possible, with input parameter that can be adapted to any kind of data, this will save you a lot of work in the future
-%         \item Understand first your algorithm, how the data is going to be processed and design the best way to input your data
-%         \item Accomodate your data according to the type of attributes that the algorithm can handle
-%         \item Consider the size of your dataset, if it's huge your program may never end
-%         \item Find out of your algorithm can work with high dimensional data (multi-wavelenght), because if not, you won't be able to input datacubes
-%         \item Find out if your selected clustering algorithms is able to find clusters of irregular shapes, this will help you to device the best way to accomodate your patterns
-%         \item Handle outliers, if you identify them, know where they are, try to eliminate them as much as possible, we don't want them messing with our clusters
-%         \item In case that you come up with an artful mathematical method like PCA to reduce dimensionality, make sure that what you input can later make sense when is clustered, becuase you will be working in another space
-%         \item Remeber that the most important goal is to find hidden knowledge therefore, you must know you to visualize and interpret your results
-%         \item For the let's call it \emph{astronomy image processing}, make sure that your data is scientifically aproved ask people around you.
-%     \end{itemize}
+% 		\item
+% 		A Carrier may never pick up units in a system that contains enemy spaceships.
+% 		In other words, a Carrier may not move into a system containing enemy spaceships, pick up units, and then fight a Space Battle.
+% 		\item
+% 		A Carrier may never pick up units from a system that has been previously activated by the same player.
+% 	\end{itemize}
+% \end{itemize}
 
-% %Convolution
-% %Cropping
-% %Repgojection
-% %Cubbing
-% %Explain the main rules of why to preprocess the data
+% \section{Planetary Defence System (PDS) Unit}
+% \begin{wrapfigure}{L}{0.3\textwidth}
+% 	\vspace*{-10pt}
+% 	\includegraphics[scale=0.8]{/units/pds}
+% 	\vspace*{-10pt}
+% \end{wrapfigure}
 
-% This section is explained at lenght in the GitHub page, there you will find my codes and some helpful links, \url{https://github.com/LaurethTeX/Clustering/blob/master/Preprocessing.md}
+% \unitdesc{6}{2}
 
-% \section{Software available}
-% %Como hacer preprocessing en los datos
-% For doing data preprocessing there are a bunch of softwares available, even there is one being developed by Sophia Lianou called \emph{imagecube} which, when it is finished, will be one of the best, has everything you need in one package. I'll say that this part is yours to discover, everyday there are more and more being released or new versions of the existent ones but in the meanwhile it will depend entirely on you, which software you want to use. For \emph{Python} all the functions you will need can be found in the \emph{Astropy} module, \textbf{check the API!!!.}
+% The PDS unit represents both anti-fleet and planetary invasion countermeasures (missiles and enormous energy cannons) as well as a planetary shield.
+% The rules for using the various abilities of the PDS unit are as follows:
 
+% \subsubsection{Planetary Shield}
+% During the Invasion Combat step of the Activation Sequence, enemy Dreadnoughts may not bombard a planet containing an enemy PDS unit. 
+% (See page 30 for additional information on Invasion Combat.)
 
-% This specific part is all explained in GitHub in this link. \url{https://github.com/LaurethTeX/Clustering/blob/master/Preprocessing.md#first-step-data-pre-processing}
+% \subsubsection{Space Cannon}
+% A PDS unit is capable of firing its massive arsenal into space in order to destroy nearby enemy ships.
+% The basic range of a PDS reaches only into its own system, but by acquiring the “Deep Space Cannon” players can extend the range of their PDS units into adjacent systems.
+% A PDS “space cannon attack” is always fired during the third step of the Activation Sequence, and only given one of the two conditions below:
+% \begin{itemize}
+% 	\item
+% 	After the owner of the PDS has activated a system, and after any friendly ship movement into the system, each of the active player's PDS units in range may fire once at any enemy fleet in the activated system before a Space Battle begins.
+% 	Note that the activating player's PDS units (that are in range) may fire even if the player did not move any ships into the system during the activation. 
+% 	In other words, it is possible for a player to activate a system purely for the purposes of firing his PDS at an enemy fleet in range.
+% 	\item
+% 	When a player activates a system in range of an enemy PDS unit, the owners of any enemy PDS units in range may, after the movement step of the Activation Sequence, fire once per PDS at any units in the system owned by the activating player.
+% 	Note that when firing your PDS units during another player's activation, you may only fire at the units controlled by the activating player.
+% 	It is thus not possible to draw third party PDS fire at an enemy fleet by simply activating its system from afar.
+% \end{itemize}
 
-% \begin{remark}
-% 	Some links to start,
-%     \begin{itemize}
-%     	\item Astropy, Convolution and filtering, \url{http://docs.astropy.org/en/stable/convolution/index.html}
-%         \item AstroDrizzle: New Software for Aligning and Combining
-% HST Images, With Improved Handling of Astrometric Data, \url{http://drizzlepac.stsci.edu/}
-% 		\item Tiny Tim HST PSF Modeling, \url{http://www.stsci.edu/hst/observatory/focus/TinyTim}
-%         \item IRAF, Image Reduction and Analysis Facility, \url{http://iraf.noao.edu/}
-%     \end{itemize}
-% \end{remark}
+% \subsubsection{Invasion Defence}
+% Immediately before the first round of an Invasion Combat, any defending PDS units on a planet may fire, once per PDS, at the invading Ground Forces.
+% This is a one-time pre-combat shot only and does not occur before every other round of the subsequent Invasion Combat.
 
+% \subsubsection{Firing PDS Units}
+% When firing a PDS unit, simply roll one die for each PDS involved.
+% For each result equal to or greater than the combat value of the PDS (normally a 6), the enemy fleet (or invading Ground Force units) must immediately take a casualty without being granted return fire.
 
-% %----------------------------------------------------------------------------------------
-% %	CHAPTER 4
-% %----------------------------------------------------------------------------------------
+% \subsubsection{PDS Limitation}
+% A player may never have more than two PDS units on a planet. 
+% A planet already holding two PDS units cannot produce a third.
 
-% \chapterimage{head1.png} % Chapter heading image
+% \subsubsection{Transporting PDS}
+% PDS units are always produced on the planet of the producing Space Dock.
+% PDS units cannot move of their own volition.
+% Like Ground Forces, PDS units must be transported to other planets via a Carrier or a War Sun unit.
 
-% \chapter{Experimenting}
+% \section{Fighter Unit} \label{sec:fighter_unit}
 
-% I discovered surfing on the internet a cloud computing software that is free, has data mining algorithms embeded, is specifically developed for Astronomy and is programmed by Caltech, University Federico II and the Astronomical Observatory of Capodimonte. The homepage website, \url{http://dame.dsf.unina.it/index.html}. Well, the platform for testing is ready!, now what? I requested and account and the next day they sent me an acceptance with my username and my password approved.
-% I introduced myself to the documentation, the available clustering funcionts, the manuals for every method, the blogs and discovered that the was one method available that could work with datacubes and do its clustering on every pattern (number in the multidimensional matrix) which was exaclty what I needed. The name of this method is ESOM (Evolving Self Organizing Maps) and I read its manual, did some foolish test with all my image and ... never got a result ... the experiment ran forever (more than two weeks), when I realised that this wasn't the best way to tackle this problem I started considering only clustering on the independent images and not in the datacube due to the fact that the dimensionality was inmense. So, in the end my selected methods have some results but not all, here is where all the work has to be done, analyzed and tested again.
+% \begin{wrapfigure}{L}{0.3\textwidth}
+% 	\vspace*{-10pt}
+% 	\includegraphics[scale=0.8]{/units/pds}
+% 	\vspace*{-10pt}
+% \end{wrapfigure}
 
-% \section{Methods Selected}
+% \unitdesc{10 (plus supplement counters)} {1 (to produce two Fighter units)}
 
-% \subsection{ESOM, Evolving Self Organizing Maps}
-% The \emph{official} manual for this method can de found here, \url{http://dame.dsf.unina.it/documents/ESOM_UserManual_DAME-MAN-NA-0021-Rel1.2.pdf}, there you will find a full explanation of the method, the meaning of every variable and the supported file types.
+% The Fighter unit is the most inexpensive ship in a player's arsenal. Fighters, which are typically moved into battle by Carrier units, can overwhelm an enemy by their sheer numbers and are vital to bolster a player's fleet against enemy fire. Fighters are governed by the following rules:
 
-% Here is my own explanation of how this particular method works, first of all, can be used as an unsupervised machine learning technique or you can help the algorithm to identify regions an make it a supervised machine learnig technique, this type of clustering finds groups of patterns with similarities and preserves its topology, starts with a null network without any nodes and those are creted incrementally when a new input pattern is presented, the prototype nodes in the network compete with each other and the connections of the winner node are updated. 
+% Fighters cannot move by themselves and require the transport of a Carrier unit to move around the board.
 
-% The method is divided in three stages, \emph{Train}, \emph{Test} and \emph{Run}.
-% The first step to experiment with this method is Train. Here, the important variables to undertand an look at are, the learning rate, epsilon and the pruning frequency. It is highly recomendable that you check the DAMEWARE manual for this function, there they will explain in detail the meaning of each on the mentioned variables.
-% % fULL AND SAMPLE DATACUBE
-% \subsubsection{Expected Results}
-% 	This particular method as I mentioned before supports datacubes and considers as an independent pattern all the  numbers in the multi-dimensional array this means that our clusters are groups of patterns with similar characteristics, that correspond to volumes of similar fluxes of electrons inside the datacube.
-    
-%     The output files from the experiment that will show us our results are, 
-%     \begin{itemize}
-%     	\item \emph{E\_SOM\_Train\/Test\/Run\_Results.txt}: File that, for each pattern, 
-% reports ID, features, BMU, cluster and activation of winner node
-% 		\item \emph{E\_SOM\_Train\/Test\/Run\_Histogram.png}: Histogram of clusters found 
-%         \item \emph{E\_SOM\_Train\/Test\/Run\_U\_matrix.png}: U-Matrix image 
-%         \item \emph{E\_SOM\_Train\/Test\/Run\_Clusters.txt}: File that, for each clusters, reports label, number of pattern assigned, percentage of association respect total number of pattern and its centroids. 
-%         \item \emph{E\_SOM\_Train\_Datacube\_image.zip}: Archive that includes the 
-% clustered images of each slice of a datacube.\footnote{I have my doubts whether this file is produced or not, in none of my test was produced, you might need to contact the developers and ask about this.}
-%     \end{itemize}
-% The file that you will be looking forward to see is the last one, the zip where you will be able to see the slices of the volume, and how the final configuration of the clusters was arranged.
+% Fighters are always considered to be in space, even while being transported. 
+% Thus fighters will always participate in any Space Battle in their system.
 
-% \subsubsection{Failed and still running tests: What no to do and what is still running}
-% The first tests I did included all the complete datacube, including the areas where data was missing, the images were only reprojected and convolved. That was before realising that outliers migth affect the ability of the algorithm to identify the clusters and distract them with noise and missing data. So, the first thing you must NOT do, is to get rid of the outliers when you are training your network, if you ever get to have a well trained network then it might be interesting to learn how the network interacts with noise an outliers, but for now we will help her a bit. 
+% Fighters require at all times that their present system has sufficient capacity to sustain them.
 
-% In table \ref{tab:ds9failed} are the input parameters I used to the failed tests applied in the \emph{raw} datacube, and in table \ref{tab:ds9running} are the input parameters used on experimets that are stil running since August 7th, 2014. (I wonder if they will ever end)
+% A Space Dock has a capacity for 3 Fighters, a Carrier (if not carrying any Ground Forces or PDS) a capacity of 6, and a War Sun (if not carrying any Ground Forces or PDS) also a capacity of 6. 
 
-% \begin{table}[h!]
-%   \centering
-%     \begin{tabular}{ c c c c c c }
-%     \hline\hline
-    
-%     Name & Input nodes & Normalized data & Learning rate & Epsilon & Pruning Frequency\\
-%     \hline
-    
-%     Train2 & 1 & 1 & 0.3 & 0.001 & 5\\
-%     Train3 & 1 & 1 & 0.7 & 10 & 100\\
-%     Train4 & 1 & 1 & 0.95 & 1 & 10\\
-%     Train5 & 1 & 1 & 0.99 & 0.1 & 10\\
-%     Train6 & 1 & 1 & 0.01 & 0.01 & 1\\
-%     Train7 & 1 & 1 & 0.5 & 0.7 & 5\\
-%     Train8 & 1 & 1 & 0.5 & 0.5 & 7\\
-%     Train11 & 1 & 1 & 0.25 & 0.00001 & 10\\
-    
-%     \hline
-%   \end{tabular}
-%   \caption{This table describes all the failed experiments done in the workspace WFC3 with the \emph{raw} datacube as an input, using the ESOM method in the DAME platform selecting the number 3 as the dataset type and without using a previous configuration file.}
-%   \label{tab:ds9failed}
-% \end{table}
+% If a system contains more Fighter units than its capacity allows, the owner of the Fighter units must immediately return enough Fighters to his reinforcement pile so that the number of Fighter units and the system's capacity is equal.
 
-% \begin{table}[h!]
-%   \centering
-%     \begin{tabular}{ c c c c c c }
-%     \hline\hline
-    
-%     Name & Input nodes & Normalized data & Learning rate & Epsilon & Pruning Frequency\\
-%     \hline
-    
-%     Train9 & 1 & 1 & 0.3 & 0.0001 & 5\\
-%     Train10 & 1 & 1 & 0.99 & 0.0001 & 10\\
-%     Train12 & 1 & 1 & 0.5 & 0.0001 & 5\\
-    
-%     \hline
-%   \end{tabular}
-%   \caption{This table describes all the experiments done in the workspace WFC3 that are still running since August 7th, 2014 with the \emph{raw} datacube as an input, using the ESOM method in the DAME platform selecting the number 3 as the dataset type and without using a previous configuration file.}
-%   \label{tab:ds9running}
-% \end{table}
+% Note that a system's Fighter capacity is not relevant during a Space Battle.
+% This means that Fighters participating in a Space Battle can continue to fight even if their Carrier has been destroyed.
+% After a Space Battle has ended, however, Fighter units without sufficient supporting capacity are immediately removed.
 
-% Some of the failed experiments had histogram like the one you can see on figure \ref{img:faildtrain2} where the cluters were created but reached a point where the neural network could not define how to differenciate a cluster from another clusted and failed.
+% \section{Cruiser Unit}
 
-% \begin{figure}[h!]
-% 	\centering
-%     \includegraphics[width=0.47\textwidth]{Histogram_train2.png}
-%     \caption{In this particular experiment, the neural network failed due to a very low prunning frequency, high number of patterns and all the outliers inclusions.}
-%     \label{img:faildtrain2}
-% \end{figure}
+% \begin{wrapfigure}{L}{0.4\textwidth}
+% 	\vspace*{-10pt}
+% 	\includegraphics[scale=0.8]{/units/cruiser}
+% 	\vspace*{-10pt}
+% \end{wrapfigure}
 
-% Hey, if you were wondering why I always choose to normilize, and one as the input node, well the normalization is due to the fact that I know that the data has, according to its filter, all kinds of ranges of fluxes on every layer which means that the distances between patterns might not be correct, this is a topic you should look into. And for the input node I choose 1 because if I start with any other number the experiment automatically fails, and of course we do not want that.
+% \unitdesc{8}{2}
 
-% As I progressed and saw the results and the \emph{log files} in all the failed experiments I decide to try the algorithm on independent layers and see if I could get something. Therefore I selected the H$\alpha$ convolved observation (halpha\_conv.fits) and did some tests on it, table \ref{tab:hafailed} shows the parameters I used for the failed experiments and table \ref{tab:harun} shows the paramters fo the still running experiments.
+% The Cruiser unit is among the most effective ships in the TI galaxy.
+% For a fair price, the Cruiser unit delivers an effective punch in combat and gives its owner the flexibility of great speed.
+% There are no other special rules that govern the Cruiser unit.
 
-% \begin{table}[h!]
-%   \centering
-%     \begin{tabular}{ c c c c c c }
-%     \hline\hline
-    
-%     Name & Input nodes & Normalized data & Learning rate & Epsilon & Pruning Frequency\\
-%     \hline
-    
-%     TrainHa1 & 1 & 1 & 0.5 & 0.01 & 5\\
-%     TrainHa2 & 1 & 1 & 0.5 & 0.001 & 5\\
-    
-%     \hline
-%   \end{tabular}
-%   \caption{This table describes the failed experiments done in the workspace WFC3 for the \emph{halpha\_conv.fits} file, using the ESOM method for one layer in the DAME platform selecting the number 3 as the dataset type and without using a previous configuration file.}
-%   \label{tab:hafailed}
-% \end{table}
+% \section{Destroyer Unit}
+% \begin{wrapfigure}{L}{0.3\textwidth}
+% 	\vspace*{-10pt}
+% 	\includegraphics[scale=0.8]{/units/destroyer}
+% 	\vspace*{-10pt}
+% \end{wrapfigure}
 
-% \begin{table}[h!]
-%   \centering
-%     \begin{tabular}{ c c c c c c }
-%     \hline\hline
-    
-%     Name & Input nodes & Normalized data & Learning rate & Epsilon & Pruning Frequency\\
-%     \hline
-    
-%     TrainHa3 & 1 & 1 & 0.5 & 0.0001 & 5\\
-    
-%     \hline
-%   \end{tabular}
-%   \caption{This table describes the still running experiments since August 10th, 2014 in the workspace WFC3 for the \emph{halpha\_conv.fits} file, using the ESOM method for one layer in the DAME platform selecting the number 3 as the dataset type and without using a previous configuration file.}
-%   \label{tab:harun}
-% \end{table}
+% \unitdesc{8}{1}
 
-% My next mental step was to repeat the tests eliminating as many outliers I could reduce, my hypothesis here is that, if I elimante all the areas where there is missing data and noise, the neural networks will be concentrated only in the patterns I'm interested in clustering and maybe idenfying interesting regions that correspond to some known interstellar object. So, what I did was to try the ESOM algorithm with, again, independent images, this time I decided to apply the same experiment to three different layers, H$\alpha$, UV wide and $i$-band. In table \ref{tab:threefail} you can see the parameters of the failed experiments and on figure \ref{img:fail3} there are some of the output histograms. Also, in table \ref{tab:threerun} you can see the input parameters of the still running experiments.
+% The Destroyer unit, although not as powerful in combat as its larger cousin, the Cruiser, is a fast, inexpensive, and versatile weapon that can deliver a lethal blow to any enemy fleet that relies too heavily on Fighters.
 
-% \begin{table}[h!]
-%   \centering
-%     \begin{tabular}{ c c c c c c }
-%     \hline\hline
-    
-%     Name & Input nodes & Normalized data & Learning rate & Epsilon & Pruning Frequency\\
-%     \hline
-    
-%     Train1 & 1 & 1 & 0.5 & 0.001 & 50\\
-%     Train2 & 1 & 1 & 0.5 & 0.01 & 50\\
-%     Train3 & 1 & 1 & 0.5 & 0.1 & 100\\
-%     Train4 & 1 & 1 & 0.5 & 0.001 & 100\\
-    
-%     \hline
-%   \end{tabular}
-%   \caption{This parametes where used in three different workspaces (\emph{halphaCrop, uvwidecrop, ibandcrop}), with their own input file that corresponded to the convolved and cropped observation of each filter (halpha\_conv\_crp.fits, uvwide\_conv\_crp.fits, iband\_conv\_crp.fits), all of the experiments had no previous configuration file and the dataset type was 3 and all failed.}
-%   \label{tab:threefail}
-% \end{table}
+% \subsubsection{The Destroyer Anti-Fighter Barrage}
+% Before a Space Battle begins, each Destroyer unit (both attacking and defending) may roll two combat dice.
+% For every result equal to or higher than the Destroyer's combat value (normally a 9), the opponent must immediately destroy one Fighter unit. 
+% Fighters destroyed in this way are removed before the Space Battle begins and do not receive return fire. 
+% Note that the Destroyer unit’s special barrage is only fired once before the actual Space Battle begins, and not before every Space Battle round.
 
-% \begin{figure}[h!]
-% 	\centering
-%     \includegraphics[width=0.31\textwidth]{Histogram-halpha1.png}
-%     \includegraphics[width=0.31\textwidth]{Histogram-uvwide-2.png}
-%     \includegraphics[width=0.31\textwidth]{Histogram-iband3.png}
-%     \caption{The histogram on the left corresponds to the halpha workspace in Train1, the one on the center to the iband workspace in Train3 and the one on the right to the uvwide workspace in Train2, all of them were failed experiments.}
-%     \label{img:fail3}
-% \end{figure}
+% \section{Dreadnought Unit}
+% \begin{wrapfigure}{L}{0.4\textwidth}
+% 	\vspace*{-20pt}
+% 	\includegraphics[scale=0.8]{/units/dreadnought}
+% 	\vspace*{-10pt}
+% \end{wrapfigure}
 
-% \begin{table}[h!]
-%   \centering
-%     \begin{tabular}{ c c c c c c }
-%     \hline\hline
-    
-%     Name & Input nodes & Normalized data & Learning rate & Epsilon & Pruning Frequency\\
-%     \hline
-    
-%     Train5 & 1 & 1 & 0.5 & 0.0001 & 100\\
-%     Train6 & 1 & 1 & 0.99 & 0.0001 & 75\\
+% \unitdesc{5}{5}
 
-%     \hline
-%   \end{tabular}
-%   \caption{This parametes where used in three different workspaces (\emph{halphaCrop, uvwidecrop, ibandcrop}), with their own input file that corresponded to the convolved and cropped observation of each filter (halpha\_conv\_crp.fits, uvwide\_conv\_crp.fits, iband\_conv\_crp.fits), all of the experiments had no previous configuration file and the dataset type was 3. The experiments mentioned are still running since August 11th, 2014.}
-%   \label{tab:threerun}
-% \end{table}
+% No unit in the galaxy, except for the legendary War Sun, can project the firepower and force that is mustered by the awesome Dreadnought.
+% Its massive weaponry, deadly bombardment option, and mighty bulwark, makes it the undisputed foundation of any successful fleet.
+% The Dreadnought unit provides two unique features: The ability to sustain damage and to execute a planetary bombardment.
 
-% As you can see, I discovered that if I choose an epsilon of 0.0001 the experiments will be still running, and all of the other variables can be variated like the learning rate and the pruning frequency.
+% \subsubsection{Sustain Damage} \index{sustain damage}
+% A Dreadnought unit can absorb a single hit before it is destroyed.
+% After taking its first hit (as a result of Space Battle, PDS fire, or other), turn the Dreadnought unit on its side to indicate that it has been damaged.
+% If a damaged Dreadnought is forced to take another hit, it is destroyed.
+% Other than being one step closer to destruction, being damaged does not affect the Dreadnought in any other way.
+% During the Status Phase, all damaged ships are repaired and are returned to their normal upright position.
 
-% \subsubsection{The big and small reprojected datacube}
-% After a few days of waiting anxiously for the experiments to end and not getting any new results I decided to test the convolved, cropped and reprojected datacube including all the layers with a fixated prunning frequency of 0.0001, hopping that this time I could get some interesting results. The input parameters for the two experiments I tested can be seen in table \ref{tab:cubeesom}.
+% \subsubsection{Planetary Bombardment} \index{bombardment} \index{planetary bombardment}
+% Immediately before an Invasion Combat, the invading player's Dreadnoughts in the activated system may bombard enemy Ground Forces on a contested planet.
+% A planetary bombardment is executed by simply allowing the invading player to roll one combat die for each bombarding Dreadnought.
+% For every hit, the defending player must immediately remove one Ground Force unit.
+% Units eliminated by planetary bombardment do not receive return fire and do not participate in the subsequent Invasion Combat.
+% Note that a Dreadnought may not bombard a planet unless that planet is being invaded by friendly forces that landed here during the Planetary Landings step of the Activation Sequence.
+% A Dreadnought may not bombard a planet that contains at least one PDS.
+% The planet is considered to have a planetary shield protecting it against missile and energy attacks from space.
+% If a player is invading two or more separate planets (in the same system) during the same activation, the active player must decide how to divide his bombardment.
+% A Dreadnought can only bombard once during every Activation Sequence.
 
-% \begin{table}[h!]
-%   \centering
-%     \begin{tabular}{ c c c c c c }
-%     \hline\hline
-    
-%     Name & Input nodes & Normalized data & Learning rate & Epsilon & Pruning Frequency\\
-%     \hline
-    
-%     ESOMtrain1 & 1 & 1 & 0.5/0.75 & 0.0001 & 100\\
-%     ESOMtrain2 & 9 & 1 & 0.75 & 0.001 & 100\\
+% \section{War Sun}
+% \begin{wrapfigure}{L}{0.3\textwidth}
+% 	\vspace*{-20pt}
+% 	\includegraphics[scale=0.8]{/units/war_sun}
+% 	\vspace*{-10pt}
+% \end{wrapfigure}
 
-%     \hline
-%   \end{tabular}
-%   \caption{This parametes where used in two different workspaces (\emph{DataCube, RPDataCube}), the first experiment is still running since August 12th, 2014 and the second failed. The input for the DataCube workspace corresponds to a 9 layer datacube with no reprojection and the RPDataCube input is the same datacube but reprojected.}
-%   \label{tab:cubeesom}
-% \end{table}
+% \unitdesc{2}{12}
 
-% As you can see, in the experiment \emph{ESOMtrain2} I tried to start the neural network with 9 nodes (thinking logically as having 9 layers in the datacube) and immediatly the experiment failed, so \textbf{do not try to input a number different than one.}
+% Without a doubt, the War Sun unit is the definitive combat unit of the galaxy.
+% It is more like a fleet unto itself, than a mere ship.
+% The War Sun boasts an almost unfathomable firepower, powerful construction, tremendous speed, capacity to hold great hosts of troops and fighters and unparalleled bombardment strength.
+% The War Sun unit is subject to the following rules.
 
-% I waited 17 days for the experiments to finish (I did some other stuff in the meanwhile, most of the time learning new things) but I did not get any results so I came up with a different strategy, selecting small datacubes with already identified regions by the NED database. I selected randomly a particular HII region located in RA 204.26971, DEC -29.84933 (See figure \ref{img:h2region}) and centered it in a 605x605 pixels sample.
+% A player may not produce a War Sun unit unless he has acquired the “War Sun” Tech. advance.
 
-% \begin{figure}[h!]
-% 	\centering
-%     \includegraphics[width=0.52\textwidth]{small_ex.png}
-%     \caption{Illustration of the randomly chosen HII region for the small sample from the M83 reprojected datacube.}
-%     \label{img:h2region}
-% \end{figure}
+% Like the Dreadnought, a War Sun can sustain a single hit (or “damage”) before it is destroyed.
+% As with the Dreadnought, a War Sun is placed onto its side in order to indicate its damaged state and will be destroyed if subjected to another hit.
+% Any damage sustained by a War Sun is automatically repaired during the Status Phase.
 
-% This time, most of the experiments gave me immediate results failing or finishing. On table \ref{tab:small}, you can see the input parameters and the status of the experiments I tested with the small datacube.
+% Like the Dreadnought, a War Sun unit is allowed to bombard planets.
+% Unlike the Dreadnought, however, a War Sun ignores the presence of a PDS unit's planetary shield.
 
-% \begin{table}[h!]
-%   \centering
-%     \begin{tabular}{ c c c c c c }
-%     \hline\hline
-    
-%     Name & Normalized & Learning rate & Epsilon & Pruning Frequency & Status\\
-%     \hline
-    
-%     ESOMtrain1 & 0 & 0.5 & 0.001 & 50 & Running\\
-%     Train2 & 1 & 0.5 & 0.0001 & 50 & Ended\\
-%     Train3 & 1 & 0.5 & 0.1 & 50 & Ended\\
-%     Train4 & 0 & 0.5 & 0.0001 & 50 & Running\\
-%     Train5 & 0 & 0.95 & 0.0001 & 100 & Running\\
-%     Train6 & 1 & 0.99 & 0.001 & 50 & Ended\\
+% Also, a War Sun may bombard a planet during the Invasion Combat step of the Activation Sequence, even if no friendly Ground Force units have landed on the planet in an invasion attempt.
 
-%     \hline
-%   \end{tabular}
-%   \caption{All the mentioned experimend belong to the SmallDataCube workspace, have 3 as data type and one input node, no previous configuration file and the input file is \emph{rp\_small\_datacube.fits}.}
-%   \label{tab:small}
-% \end{table}
-% In this case three of the experiments ended and none od them failed (yet), here I detected that the output file that contains the distributions of the clusters on every layer is missing, but we got some interesting resuts, in the next figures (\ref{img:smallended},\ref{img:matrixended}) you can apreciate better what I'm taking about.
+% A War Sun unit rolls three combat dice during Space Battles and Bombardments.
 
-% \begin{figure}[h!]
-% 	\centering
-%     \includegraphics[width=0.31\textwidth]{Small-train2.png}
-%     \includegraphics[width=0.31\textwidth]{Small-train3.png}
-%     \includegraphics[width=0.31\textwidth]{Small-train6.png}
-%     \caption{All of the images correspond to histograms of the ended experiments mentioned above in order (Train2, Train3, Train6), as you can see there is a predominance on one of the clusters that can mean that is detecting the HII region or the experiment never started, to understand further the results a visualization of the clusters is needed.}
-%     \label{img:smallended}
-% \end{figure}
+% Like the Carrier unit, a War Sun has a capacity of 6 and may transport Ground Forces, PDS, and Fighter unit.
 
-% \begin{figure}[h!]
-% 	\centering
-%     \includegraphics[width=0.31\textwidth]{matrix2-01.png}
-%     \includegraphics[width=0.31\textwidth]{Small-train3-matrix.png}
-%     \includegraphics[width=0.31\textwidth]{matri6-01.png}
-%     \caption{All of the images correspond to U-matrices of the ended experiments mentioned above in order (Train2, Train3, Train6)}
-%     \label{img:matrixended}
-% \end{figure}
-%  There is work to be done for this cases, understand what is going on and interpret correctly the results, but last we got some.
-% \subsection{CSOM}
-% %one image
-% Well, as I mentioned before I did some tests using the ESOM method but since I wasn{t getting any results I thougth of testing this methond, as always I strongly recommend to read carefully its manual, \url{http://dame.dsf.unina.it/documents/SOFM_UserManual_DAME-MAN-NA-0014-Rel1.1.pdf} and fully undesrtand what is going on behind the curtains. In the meanwhile, this is my own explanation. This method uses FITS files, does not support datacubes, speciffically uses a neighborhood function in order to preserve the topological properties of the input space, it is a type of artificial network and is mainly unsupervised learning  and produces a low dimensional discretized representation of the input space of the training samples. I in this case you can choose the number of clusters/neurons in the first layer (neural network), the diameter, number of layers (in the neural network), learning rate and variance  on each layer. Here you have more input parameters to control.
-% \subsubsection{Expected Results}
-% Well in this case, since only FITS images are allowed, what we expect to find are areas indeitfying the different objects in the interstellar medium.
-
-% The important results in this case, are got in the \emph{Run} and \emph{Test} steps, in the \emph{Train} step only the network configuration is outputted. What we are interested on seein are the plotted clusters.
-% \subsubsection{Tests}
-% In this case I did some tests on the CSOM workspace, but none of the, where succesful, too many input variables to control and test. So, in this case I will leave this parameters free for you to try. I do believe that tis method could be very useful and if you find a way to input the datacube in a different configuration you will get some interesting results, due to the fact that in this method the preservation of the topology is one of the main principles.
-% %Mencionar los dos metodos de DAMEWARE
-% %Explicar los dos metodos, como untroduciste los datos, el objectivo de cada uno
-
-% %Lo que se espera obtener de cada uno de los experimentos, uno es en una sola imagen y el otro es en el datacube
-% %Los archivos que se obtienen y lo que significas, lo que se puede hacer
+% \section{Damaged and Undamaged Units} \index{damaged units}
+% When a Dreadnought or War Sun unit takes its first hit, it is damaged rather than destroyed.
+% Place the unit on its side to indicate its damaged status (As indicated above).
 
 
 
-% %Poner los parametros que se han elegido en los experimentos fallidos, y los que siguen en modo running
-% %Exlpicar por fases los experimentos que se intentaron
-
-
-% \section{Further work}
-% Well, finally we reached the point where I my time in Canada finished and I this research is still on its first stages. I have so many ideas of how to explore the clustering techniques in the DAME platform, MatLab, Python and everything else that can be tested. 
-
-% \subsection{Some interesting ideas}
-% %Normalizar los datos
-% %Acomodarlos y hacer que los paquetes sean mas pequeños
-% %Random points
-% For now, I would say that your best chance here, is to device an efficient way to input the information contained in a datacube as a list of points with values and reduce its dimensionality by randomly choosing them on every layer. If you are ever stuck, or no new ideas come to your mind, do not hesitate to contact me I might have a new interesting idea you can test.
-
-% \subsection{Links you should check out}
-% Most of them are listed in the useful resourses section of The Caltech-JPL Summer School on Big Data Analytics, the webpage \url{https://class.coursera.org/bigdataschool-001/wiki/Useful_resources}, you may need to create an account in Coursera and enroll in the course. And the rest of them are located in the References section on my GitHub page, \url{https://github.com/LaurethTeX/Clustering/blob/master/References.md}.
-% %Los links que estan en la pagina de el curso de caltech
-% %Sky surveys
-% %MATLAB SOM toolbox
-% %SAO datamining
 \vfill
 % \textit{Wish you all the best, Andrea Hidalgo}
 \end{document}
